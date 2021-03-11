@@ -1,12 +1,7 @@
-_site/
+# Jekyll ignores
 .sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-
-
-#=====================================================
-# git ignore from new theme
+_site
+.Gemfile.lock
 
 # Windows image file caches
 Thumbs.db
