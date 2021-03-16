@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article id="main">
+
+  <header>
+    <h2>{{ page.title }}</h2>
+  </header>
+
+  {{ content }}
+
+</article>
