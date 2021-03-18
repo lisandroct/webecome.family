@@ -1,6 +1,3 @@
-# Welcome to Jekyll!
-#
-
 # Site settings
 title: Gillian & Lisandro
 description: |
@@ -15,5 +12,5 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://webecome.family" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
-#sass:
-#  style: compressed
+sass:
+  style: compressed
