@@ -5,8 +5,8 @@ title: Q&A
 <section id="three" class="wrapper style3 special">
 	<div class="inner">
 		<header class="major">
-			<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-			fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+			<p>So, you have some questions. We tried to think of answers to everything, <br />
+			but if we left something out, don't be afraid to drop one of us a text or an email! We can't wait to celebrate with you. :)</p>
 		</header>
 		<ul class="features">
 			<li class="icon fa-paper-plane-o">
@@ -27,11 +27,11 @@ title: Q&A
 			</li>
 			<li class="icon fa-heart-o">
 				<h3>Should I brush up on my Spanish?</h3>
-				<p>Customs officers speak English.</p>
+				<p>Customs officers speak English. Good luck with the bus. :P</p>
 			</li>
 			<li class="icon fa-flag-o">
 				<h3>Should I brush up on my English?</h3>
-				<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+				<p>???? idk man.</p>
 			</li>
 			<li class="icon fa-flag-o">
 				<h3>Where are you registered?</h3>
@@ -39,7 +39,7 @@ title: Q&A
 			</li>
 			<li class="icon fa-flag-o">
 				<h3>Other questions?</h3>
-				<p>text Gillian or lisandro or email us at giandligethitched@gmail.com.</p>
+				<p>Text Gillian or Lisandro or email us at giandligethitched@gmail.com.</p>
 			</li>
 		</ul>
 	</div>
