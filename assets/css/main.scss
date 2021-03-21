@@ -1721,14 +1721,6 @@ $baseurl: '{{ site.baseurl }}/assets/images';
 		}
 	}
 
-	body.is-mobile {
-		#main {
-			> header {
-				background-attachment: scroll;
-			}
-		}
-	}
-
 /* Footer */
 
 	#footer {
@@ -1810,25 +1802,5 @@ $baseurl: '{{ site.baseurl }}/assets/images';
 
 		#footer {
 			background-color: darken(transparentize(_palette(bg), 0.1), 8);
-		}
-	}
-
-	body.is-mobile {
-		&.landing {
-			#page-wrapper {
-				background: none;
-			}
-
-			#banner,
-			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-
-			#footer {
-				background-color: darken(_palette(bg), 8);
-			}
 		}
 	}
