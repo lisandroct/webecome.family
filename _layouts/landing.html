@@ -2,12 +2,10 @@
 <html>
     {% include head.html %}
     <body>
+        <span id="menu-button" class="fixed top-right fas fa-bars" onclick="openNav()"></span>
         {% include side-menu.html %}
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="content" class="content">
-            <span class="top-right fas fa-bars" onclick="openNav()"></span>
+        <div>
             {{ content }}
-            {% include footer.html %}
         </div>
         {% include scripts.html %}
     </body>

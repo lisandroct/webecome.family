@@ -49,7 +49,7 @@ textarea,
 /*
 * -- SIDE MENU --
 */
-.menu {
+#menu {
     height: 100%;
     width: $menu-size;
     position: fixed;
@@ -76,6 +76,9 @@ textarea,
     }
 }
 
+/*
+* -- CONTENT --
+*/
 .content {
     width: 100%;
     height: 100%;
@@ -86,20 +89,43 @@ textarea,
     }
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+#banner {
+    width: 100%;
+    height: 100%;
+}
+
+#timeline {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+
+/*
+* -- UTILS --
+*/
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-right {
+    top: 20px;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+/*
+* -- PHONES --
+*/
 @media screen and (max-height: 450px) {
-    .sidenav {
+    .menu {
         padding-top: 15px;
         a {
             font-size: 18px;
         }
     } 
-}
-
-.top-right {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 25px;
-    margin-left: 50px;
 }
