@@ -1,4 +1,6 @@
-# Site settings
+url: "https://webecome.family"
+baseurl: ""
+
 title: Gillian & Lisandro
 description: |
   Another fine responsive  
@@ -6,11 +8,13 @@ description: |
   crafted by [HTML5 UP](http://html5up.net)
 owner: Gillian and Lisandro
 first_published: 2021
+
 wedding_date: Date to be announced
 email: hey@webecome.family
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://webecome.family" # the base hostname & protocol for your site
-# Build settings
+
+collections:
+  - timeline
+
 markdown: kramdown
 sass:
   style: compressed
