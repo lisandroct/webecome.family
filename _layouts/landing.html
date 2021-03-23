@@ -10,14 +10,20 @@
             <section id="timeline">
                 {% unless site.timeline == null %}
                     {% for event in site.timeline %}
+                    {% assign lead = {{event.lead | slugify}} %}
                     <div class="pure-g">
-                        <div class="pure-u-11-24">
-                            <img class="pure-img" src="/assets/images/{{event.image}}">
+                        <div class="timeline-icon {{lead}}">
+                            <img class="pure-img" src="/assets/images/{{lead}}.svg">
                         </div>
-                        <div class="pure-u-1-24"></div>
-                        <div class="pure-u-12-24">
-                            <h2>{{ event.title }}</h2>
-                            <p>{{event.content}}</p>
+                        <div class="pure-u-1-2">
+                            <img class="timeline-img pure-img" src="/assets/images/{{event.image}}">
+                        </div>
+                        <div class="pure-u-1-2">
+                            <div class="timeline-description">
+                                <h1>{{ event.date | date_to_string}}</h1>
+                                <h2>{{ event.title }}</h2>
+                                <p>{{event.content}}</p>
+                            </div>
                         </div>
                     </div>
                     {% endfor %}
