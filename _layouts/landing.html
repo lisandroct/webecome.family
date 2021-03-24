@@ -10,7 +10,7 @@
             <section id="timeline">
                 {% unless site.timeline == null %}
                     {% for event in site.timeline %}
-                    {% assign lead = {{event.lead | slugify}} %}
+                    {% assign lead = event.lead | slugify %}
                     <div class="pure-g">
                         <div class="timeline-icon {{lead}}">
                             <img class="pure-img" src="/assets/images/{{lead}}.svg">

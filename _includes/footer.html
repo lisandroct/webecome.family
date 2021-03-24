@@ -1,17 +1,22 @@
 <!-- Footer -->
-<footer id="footer">
-    <h2>G&L</h2>
-    <h3>{{ site.wedding_date }}</h3>
-    <ul class="copyright">
-        <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
-            {% if site.first_published %}
-                {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
-                {% if diff contains '-' %}{{ site.first_published }},{% endif %}
-            {% endif %}
-            {{ thisyear }}
-            {% if site.owner %}
-                {{ site.owner }}{% else %}{{ site.title }}
-            {% endif %}</li>
-        <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
-    </ul>
+<footer>
+    <div class="pure-g">
+        <div class="pure-u-9-24"></div>
+        <div class="pure-u-1-4">
+            <h1>G&L</h1>
+            <h2>{{ site.wedding_date }}</h2>
+        </div>
+        <div class="pure-u-9-24"></div>
+    </div>
+    <p>
+        &copy;{% assign thisyear = site.time | date: "%Y" %}
+        {% if site.first_published %}
+            {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+            {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+        {% endif %}
+        {{ thisyear }}
+        {% if site.owner %}
+            {{ site.owner }}{% else %}{{ site.title }}
+        {% endif %}
+    </p>
 </footer>
