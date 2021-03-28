@@ -1,13 +1,7 @@
 <!-- Footer -->
-<footer>
-    <div class="pure-g">
-        <div class="pure-u-9-24"></div>
-        <div class="pure-u-1-4">
-            <h1>G&L</h1>
-            <h2>{{ site.wedding_date }}</h2>
-        </div>
-        <div class="pure-u-9-24"></div>
-    </div>
+<footer class="footer">
+    <h1>G&L</h1>
+    <h2>{{ site.data.events['wedding'].date }}</h2>
     <p>
         &copy;{% assign thisyear = site.time | date: "%Y" %}
         {% if site.first_published %}

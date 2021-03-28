@@ -3,26 +3,26 @@
     {% include head.html %}
     <body>
         {% include side-menu.html %}
-        <section class="splash content-container">
+        <section class="landing-splash content-container">
             {{ content }}
         </section>
         <div class="landing-content content-container">
             <section id="timeline">
-                {% unless site.timeline == null %}
-                    {% for event in site.timeline %}
-                    {% assign lead = event.lead | slugify %}
+                {% unless site.data.timeline == null %}
+                    {% for event in site.data.timeline %}
+                    {% assign protagonist = event.protagonist | slugify %}
                     <div class="pure-g">
-                        <div class="timeline-icon {{lead}}">
-                            <img class="pure-img" src="/assets/images/{{lead}}.svg">
+                        <div class="timeline-icon {{protagonist}}">
+                            <img class="pure-img" src="/assets/images/{{protagonist}}.svg">
                         </div>
                         <div class="pure-u-1-2">
                             <img class="timeline-img pure-img" src="/assets/images/{{event.image}}">
                         </div>
                         <div class="pure-u-1-2">
                             <div class="timeline-description">
-                                <h1>{{ event.date | date_to_string}}</h1>
+                                <h1>{{ event.date | date_to_string }}</h1>
                                 <h2>{{ event.title }}</h2>
-                                <p>{{event.content}}</p>
+                                <p>{{ event.content | markdownify }}</p>
                             </div>
                         </div>
                     </div>

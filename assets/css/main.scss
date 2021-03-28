@@ -2,10 +2,14 @@
 ---
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 $montserrat: "Montserrat", sans-serif;
+$libre-baskerville: "Libre Baskerville", serif;
+
 $primary-color: #e6d9c1;
-$background-color: #111d2e;
+$dark-background: #111;
+$blue-background: #0a111b;
 $accent-color: #e6b253;
 $accent-shade: #ffcf75;
 $secondary-accent-color: #185099;
@@ -31,7 +35,7 @@ body {
     line-height: normal;
     color: $primary-color;
     font-size: 13px;
-    background: $background-color;
+    background: $dark-background;
 }
 
 html,
@@ -61,19 +65,19 @@ textarea,
     z-index: 20;
     top: 0;
     right: -$menu-size;
-    background-color: #111;
+    background-color: $dark-background;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
-    a {
+    .pure-menu-link {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 25px;
-        color: #818181;
+        font-size: 2em;
         display: block;
         transition: 0.3s;
-        &:hover {
-            color: #f1f1f1;
+        &:hover, &:focus {
+            color: $dark-background;
+            background-color: $accent-color;
         }
     }
     &.menu-is-open {
@@ -95,25 +99,108 @@ textarea,
 /*
 * -- LANDING --
 */
-.splash {
+.landing-splash {
     position: fixed;
     width: 100%;
     height: 100%;
+
+    .world {
+        position: absolute;
+        height: 170%;
+        top: -75%;
+        left: -20%;
+    }
+
+    .info {
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        h1 {
+            font-size: 3em;
+            color: $accent-color;
+            font-weight: 100;
+            .highlight {
+                font-weight: bold;
+                font-size: 115%;
+                visibility: hidden;
+                display: inline-flex;
+                color: $primary-color;
+                visibility: hidden;
+                span {
+                    position: absolute;
+                    transform: rotate(-5deg);
+                    visibility: visible;
+                }
+            }
+        }
+        h2 {
+            margin: 3em 0 0;
+            font-family: $libre-baskerville;
+        }
+        h3 {
+            font-weight: 100;
+            margin: 0 0 1em;
+        }
+    }
 }
 
 .landing-content {
     position: absolute;
-    background: black;
+    background: $blue-background;
     width: 100%;
     top: 100%;
     z-index: 1;
 }
 
 /*
+* -- LIST --
+*/
+.list-splash {
+    position: fixed;
+    height: 60%;
+    width: 100%;
+    h1 {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 30%;
+        margin: 0;
+        font-size: 4em;
+        color: $dark-background;
+        font-family: $libre-baskerville;
+    }
+}
+
+.list-content {
+    position: absolute;
+    background: $blue-background;
+    width: 100%;
+    top: 60%;
+    z-index: 1;
+    #content {
+        h1 {
+            text-align: center;
+            margin: 30px 25% 0;
+            font-size: 2em;
+            font-family: $libre-baskerville;
+        }
+        .description {
+            width: 100%;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        .grid {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}
+
+/*
 * -- TIMELINE --
 */
-#timeline{
-    margin-bottom: 50px;
+#timeline {
+    margin: 20px 0 50px;
     .pure-g{
         .timeline-img {
             width: 100%;
@@ -135,6 +222,10 @@ textarea,
         h1 {
             font-size: 2.5em;
             margin: 0 0 50px;
+            font-weight: 100;
+        }
+        h2 {
+            font-family: $libre-baskerville;
         }
         .timeline-icon {
             position: absolute;
@@ -181,15 +272,17 @@ textarea,
 /*
 * -- FOOTER --
 */
-footer {
+.footer {
     background-color: $accent-shade;
-    color: black;
+    color: $dark-background;
     text-align: center;
     padding: 30px 30px 10px;
     h1 {
+        font-family: $montserrat;
         font-weight: 100;
         font-size: 5em;
-        margin: 0;
+        width: 8em;
+        margin: 0 auto;
         border-bottom: 2px solid #000;
     }
     h2 {
@@ -216,6 +309,17 @@ footer {
     font-size: 25px;
     margin-left: 50px;
     z-index: 10;
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }
 
 /*

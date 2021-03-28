@@ -9,11 +9,7 @@ description: |
 owner: Gillian and Lisandro
 first_published: 2021
 
-wedding_date: Date to be announced
 email: hey@webecome.family
-
-collections:
-  - timeline
 
 markdown: kramdown
 sass:

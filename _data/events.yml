@@ -1,0 +1,25 @@
+civil:
+  title: Vegas Civil Wedding
+  subtitle: Vegas, baby!
+  location: Las Vegas, NV
+  date: Sunday, December 5, 2021
+  time: 10:00 AM
+  attire: Vegas chic
+  
+wedding:
+  title: Wedding Ceremony
+  subtitle: I Do's
+  location: | 
+    Parroquia San Ramón Nonato
+    575 Punta Lara, Rosario, Argentina
+  date: Saturday, January 8, 2022
+  time: 05:30 PM
+  attire: Formal
+
+reception:
+  title: Wedding Reception
+  subtitle: Let's party!
+  location: Rosario, Argentina
+  date: Saturday, January 8, 2022
+  time: 05:30 PM
+  attire: Formal
