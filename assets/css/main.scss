@@ -178,20 +178,31 @@ textarea,
     top: 60%;
     z-index: 1;
     #content {
+        padding: 30px 0 50px;
         h1 {
             text-align: center;
-            margin: 30px 25% 0;
+            margin: 0 25%;
             font-size: 2em;
             font-family: $libre-baskerville;
         }
         .description {
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
             font-size: 1.3em;
             text-align: center;
         }
         .grid {
-            width: 60%;
-            margin: 0 auto;
+            width: 95%;
+            margin: 10px auto 0;
+            .question {
+                padding: 20px 30px 10px;
+                text-align: justify;
+                h1 {
+                    margin: 0;
+                    font-size: 1.2em;
+                    text-align: justify;
+                }
+            }
         }
     }
 }
@@ -323,13 +334,53 @@ textarea,
 }
 
 /*
-* -- PHONES --
+* -- LARGE --
 */
-@media screen and (max-height: 450px) {
-    .menu {
-        padding-top: 15px;
-        a {
-            font-size: 18px;
+@media screen and (min-width: 1024px) {
+    .list-content {
+        #content {
+            .grid {
+                width: 960px;
+                .question {
+                    padding: 60px;
+                }
+            }
         }
-    } 
+    }
+}
+
+/*
+* -- MEDIUM --
+*/
+@media screen and (min-width: 765px) {
+    .list-content {
+        #content {
+            .grid {
+                .question {
+                    height: 300px;
+                    padding: 30px;
+                    &:nth-child(n) {
+                        &:nth-child(6n - 11) {
+                            background: adjust-color($secondary-accent-color, $alpha: -0.95);
+                        }
+                        &:nth-child(6n - 10) {
+                            background: adjust-color($secondary-accent-color, $alpha: -0.9);
+                        }
+                        &:nth-child(6n - 9) {
+                            background: adjust-color($secondary-accent-color, $alpha: -0.85);
+                        }
+                        &:nth-child(6n - 8) {
+                            background: adjust-color($secondary-accent-color, $alpha: -0.8);
+                        }
+                        &:nth-child(6n - 7) {
+                            background: adjust-color($secondary-accent-color, $alpha: -0.75);
+                        }
+                        &:nth-child(6n - 6) {
+                            background: adjust-color($secondary-accent-color, $alpha: -0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
