@@ -211,24 +211,10 @@ textarea,
 * -- TIMELINE --
 */
 #timeline {
-    margin: 20px 0 50px;
+    margin: 20px auto 0;
     .pure-g{
         .timeline-img {
             width: 100%;
-        }
-        &:nth-child(odd) {
-            .timeline-img {
-                padding-right: 40px;
-            }
-        }
-        &:nth-child(even) {
-            flex-flow: row-reverse;
-            .timeline-img {
-                padding-left: 40px;
-            }
-            h1 {
-                text-align: right;
-            }
         }
         h1 {
             font-size: 2.5em;
@@ -236,47 +222,54 @@ textarea,
             font-weight: 100;
         }
         h2 {
+            margin: 0 0 10px;
             font-family: $libre-baskerville;
         }
-        .timeline-icon {
+        .timeline-date {
             position: absolute;
-            width: 60px;
-            height: 60px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-left: 15px;
             margin-top: 30px;
-            background: $accent-color;
-            border-radius: 50%;
-            border: $timeline-line-thickness $accent-shade;
-            border-style: solid;
+            flex-direction: row;
             display: flex;
-            justify-content: center;
             align-items: center;
-            img {
-                max-width: 80%;
-                max-height: 80%;
+            .timeline-icon {
+                width: 60px;
+                height: 60px;
+                background: $accent-color;
+                border-radius: 50%;
+                border: $timeline-line-thickness $accent-shade;
+                border-style: solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    max-width: 80%;
+                    max-height: 80%;
+                }
+                &.he {
+                    background: $he-color;
+                }
+                &.she {
+                    background: $she-color;
+                }
             }
-            &.he {
-                background: $he-color;
-            }
-            &.she {
-                background: $she-color;
+            h1 {
+                margin: 0;
+                padding-left: 10px;
             }
         }
         .timeline-description {
-            padding: 40px 40px 0;
+            padding: 15px 15px 40px 60px;
         }
     }
     &::before {
         content: '';
         position: absolute;
         top: 0;
-        height: 100%;
+        bottom: 200px;
         width: $timeline-line-thickness;
         background: $accent-shade;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
+        left: 45px;
     }
 }
 
@@ -288,6 +281,7 @@ textarea,
     color: $dark-background;
     text-align: center;
     padding: 30px 30px 10px;
+    z-index: 5;
     h1 {
         font-family: $montserrat;
         font-weight: 100;
@@ -333,25 +327,9 @@ textarea,
 }
 
 /*
-* -- LARGE --
-*/
-@media screen and (min-width: 1024px) {
-    .list-content {
-        #content {
-            .grid {
-                width: 960px;
-                .question {
-                    padding: 60px;
-                }
-            }
-        }
-    }
-}
-
-/*
 * -- MEDIUM --
 */
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 768px) {
     .list-content {
         #content {
             .grid {
@@ -383,9 +361,120 @@ textarea,
         }
     }
 
+    #timeline {
+        margin-bottom: 50px;
+        .pure-g {
+            .timeline-date {
+                width: 50%;
+                margin-left: 0;
+                .timeline-icon {
+                    width: 60px;
+                    height: 60px;
+                    background: $accent-color;
+                    border-radius: 50%;
+                    border: $timeline-line-thickness $accent-shade;
+                    border-style: solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        max-width: 80%;
+                        max-height: 80%;
+                    }
+                    &.he {
+                        background: $he-color;
+                    }
+                    &.she {
+                        background: $she-color;
+                    }
+                }
+                h1 {
+                    margin: 0;
+                }
+            }
+            .timeline-description {
+                padding: 80px 40px 0;
+            }
+
+            &:nth-child(odd) {
+                .timeline-date {
+                    margin-left: 50%;
+                    transform: translateX(-30px);
+                }
+                .timeline-img {
+                    padding-right: 40px;
+                }
+            }
+            &:nth-child(even) {
+                flex-flow: row-reverse;
+                .timeline-date {
+                    flex-flow: row-reverse;
+                    margin-right: 50%;
+                    transform: translateX(30px);
+                    h1 {
+                        padding-right: 10px;
+                    }
+                }
+                .timeline-img {
+                    padding-left: 40px;
+                }
+                h1 {
+                    text-align: right;
+                }
+            }
+        }
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+
     .footer {
         h1 {
             width: 8em;
+        }
+    }
+}
+
+/*
+* -- LARGE --
+*/
+@media screen and (min-width: 1024px) {
+    .list-content {
+        #content {
+            .grid {
+                width: 960px;
+                .question {
+                    padding: 60px;
+                }
+            }
+        }
+    }
+}
+
+/*
+* -- EXTRA LARGE --
+*/
+@media screen and (min-width: 1536px) {
+    #timeline {
+        width: 1536px;
+        .pure-g {
+            .timeline-date {
+                width: 768px;
+            }
+
+            &:nth-child(odd) {
+                .timeline-date {
+                    margin-left: 768px;
+                }
+            }
+            &:nth-child(even) {
+                .timeline-date {
+                    margin-right: 768px;
+                    transform: translateX(30px);
+                }
+            }
         }
     }
 }
