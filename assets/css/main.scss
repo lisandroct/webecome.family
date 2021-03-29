@@ -159,6 +159,8 @@ textarea,
     position: fixed;
     height: 60%;
     width: 100%;
+    background-size: cover;
+    background-position: center;
     h1 {
         position: absolute;
         text-align: center;
@@ -256,10 +258,10 @@ textarea,
                 max-width: 80%;
                 max-height: 80%;
             }
-            &.he {
+            &.him {
                 background: $he-color;
             }
-            &.she {
+            &.her {
                 background: $she-color;
             }
         }

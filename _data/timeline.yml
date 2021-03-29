@@ -1,5 +1,5 @@
 - date: 1992-12-05
-  protagonist: he
+  protagonist: him
   title: It's a boy!
   image: pic01.jpg
   content: |
@@ -7,16 +7,127 @@
     I hope you like it!
 
 - date: 1998-12-31
-  protagonist: she
+  protagonist: her
   title: It's a girl!
   image: pic02.jpg
   content: |
     **Hello world**, this is my first Jekyll blog post.
     I hope you like it!
 
-- date: 2018-07-01
-  protagonist: they
+- date: 2014-07-01
+  protagonist: him
+  title: Something Li did
+  image: pic03.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2017-05-26
+  protagonist: her
+  title: gradjiation
+  image: pic03.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2018-07-27
+  protagonist: them
   title: He was charming <3
+  image: pic05.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2018-08-02
+  protagonist: them
+  title: Off nights at Stanford
+  image: pic02.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it! ... This isn't a good idea... lets try
+
+- date: 2018-11-08
+  protagonist: them
+  title: Distance makes the heart grow fonder
+  image: pic03.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2019-01-07
+  protagonist: them
+  title: First airport reunion
+  image: pic03.jpg
+  content: |
+    Happy airport reunion 1! Gillian threw up on the airport 
+    tarmac because she was so nervous and excited. Lisandro 
+    still kissed her. #keeper
+
+- date: 2019-08-08
+  protagonist: them
+  title: Argentina adventures!
+  image: pic05.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2019-11-27
+  protagonist: they
+  title: Second summer at Stanford
+  image: pic05.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2019-12-01
+  protagonist: them
+  title: Goodbye
+  image: pic02.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2018-07-01
+  protagonist: them
+  title: Hello (chicago)
+  image: pic03.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2018-05-26
+  protagonist: them
+  title: christmas tree picture
+  image: pic03.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2020-09-01
+  protagonist: them
+  title: goodbye
+  image: pic05.jpg
+  content: |
+    Parting is always hard... little did we know this time we'd be apart for an entire year!
+
+- date: 2020-07-14
+  protagonist: they
+  title: KDR
+  image: pic05.jpg
+  content: |
+    Year of video calling
+
+- date: 2021-10-01
+  protagonist: them
+  title: Together again--finally!
+  image: pic02.jpg
+  content: |
+    **Hello world**, this is my first Jekyll blog post.
+    I hope you like it!
+
+- date: 2021-31-01
+  protagonist: them
+  title: Yes!         (finally)
   image: pic03.jpg
   content: |
     **Hello world**, this is my first Jekyll blog post.
