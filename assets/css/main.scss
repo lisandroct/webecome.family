@@ -95,6 +95,10 @@ textarea,
         transform: translateX(-$menu-size);
     }
 }
+.frame {
+    width: 100%;
+    margin: 0 auto;
+}
 
 /*
 * -- LANDING --
@@ -106,9 +110,9 @@ textarea,
 
     .world {
         position: absolute;
-        height: 170%;
-        top: -75%;
-        left: -20%;
+        height: 100%;
+        top: -25px;
+        transform: translateX(-50px);
     }
 
     .info {
@@ -211,7 +215,7 @@ textarea,
 * -- TIMELINE --
 */
 #timeline {
-    margin: 20px auto 0;
+    margin: 20px 0 0;
     .pure-g{
         .timeline-img {
             width: 100%;
@@ -457,8 +461,10 @@ textarea,
 * -- EXTRA LARGE --
 */
 @media screen and (min-width: 1536px) {
-    #timeline {
+    .frame {
         width: 1536px;
+    }
+    #timeline {
         .pure-g {
             .timeline-date {
                 width: 768px;
