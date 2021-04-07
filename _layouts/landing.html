@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body>
-        {% include side-menu.html %}
-        <div class="landing-splash content-container">
-            <div class="frame">
-                {{ content }}
-            </div>
+{% include head.html %}
+
+<body>
+    {% include side-menu.html %}
+    <div class="landing-splash content-container">
+        <div class="frame">
+            {{ content }}
         </div>
-        <div class="landing-content content-container">
-            <div class="frame">
-                <section id="timeline">
-                    {% unless site.data.timeline == null %}
-                        {% for event in site.data.timeline %}
-                        {% assign protagonist = event.protagonist | slugify %}
-                        <div class="pure-g">
-                            <div class="timeline-date">
-                                <div class="timeline-icon {{protagonist}}">
-                                    <img class="pure-img" src="/assets/images/{{protagonist}}.svg">
-                                </div>
-                                <h1>{{ event.date | date_to_string }}</h1>
-                            </div>
-                            <div class="pure-u-1 pure-u-md-1-2">
-                                <img class="timeline-img pure-img" src="/assets/images/{{event.image}}">
-                            </div>
-                            <div class="pure-u-1 pure-u-md-1-2">
-                                <div class="timeline-description">
-                                    <h2>{{ event.title }}</h2>
-                                    <p>{{ event.content | markdownify }}</p>
-                                </div>
-                            </div>
+    </div>
+    <div class="landing-content content-container">
+        <div class="frame">
+            <section id="timeline">
+                {% unless site.data.timeline == null %}
+                {% for event in site.data.timeline %}
+                {% assign protagonist = event.protagonist | slugify %}
+                <div class="pure-g">
+                    <div class="timeline-date">
+                        <div class="timeline-icon {{protagonist}}">
+                            <img class="pure-img" src="/assets/images/{{protagonist}}.svg">
                         </div>
-                        {% endfor %}
-                    {% endunless %}
-                </section>
-            </div>
-            {% include footer.html %}
+                        <h1>{{ event.date | date_to_string }}</h1>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <img class="timeline-img pure-img" src="/assets/images/{{event.image}}">
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <div class="timeline-description">
+                            <h2>{{ event.title }}</h2>
+                            <p>{{ event.content | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endunless %}
+            </section>
         </div>
-        {% include scripts.html %}
-    </body>
+        {% include footer.html %}
+    </div>
+    {% include scripts.html %}
+    <script>
+        let pathsCount = document.querySelectorAll('#rosario-vegas path').length;
+        let i;
+        for (i = 0; i < pathsCount; i++) {
+            let path = anime.path('#rv' + i);
+            let pathLength = path('x').totalLength;
+            let element = document.getElementById('p' + i);
+            anime({
+                targets: element,
+                translateX: path('x'),
+                translateY: path('y'),
+                rotate: path('angle'),
+                easing: 'easeInOutQuad',
+                duration: pathLength * 20,
+                delay: i * 500,
+                changeBegin: function(anim) {
+                    element.style.visibility = "visible";
+                },
+                changeComplete: function(anim) {
+                    element.style.visibility = "hidden";
+                },
+                change: function(anim) {
+                    var t = anim.currentTime / anim.duration;
+                    var scale = Math.sin(t * Math.PI) * 0.5 + 0.5;
+                    element.firstElementChild.style.fontSize = scale + 'em';
+                }
+            });
+        }
+    </script>
+</body>
+
 </html>

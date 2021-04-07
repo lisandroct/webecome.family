@@ -113,6 +113,19 @@ textarea,
         height: 100%;
         top: -25px;
         transform: translateX(-50px);
+        svg {
+            position: absolute;
+            height: 100%;
+        }
+        .plane {
+            position: absolute;
+            font-size: 4em;
+            visibility: hidden;
+            i {
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 
     .info {
