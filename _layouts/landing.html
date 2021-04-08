@@ -5,9 +5,7 @@
 <body>
     {% include side-menu.html %}
     <div class="landing-splash content-container">
-        <div class="frame">
-            {{ content }}
-        </div>
+        {{ content }}
     </div>
     <div class="landing-content content-container">
         <div class="frame">
@@ -40,32 +38,132 @@
     </div>
     {% include scripts.html %}
     <script>
-        let pathsCount = document.querySelectorAll('#rosario-vegas path').length;
-        let i;
-        for (i = 0; i < pathsCount; i++) {
-            let path = anime.path('#rv' + i);
-            let pathLength = path('x').totalLength;
-            let element = document.getElementById('p' + i);
-            anime({
-                targets: element,
-                translateX: path('x'),
-                translateY: path('y'),
-                rotate: path('angle'),
-                easing: 'easeInOutQuad',
-                duration: pathLength * 20,
-                delay: i * 500,
-                changeBegin: function(anim) {
-                    element.style.visibility = "visible";
-                },
-                changeComplete: function(anim) {
-                    element.style.visibility = "hidden";
-                },
-                change: function(anim) {
-                    var t = anim.currentTime / anim.duration;
-                    var scale = Math.sin(t * Math.PI) * 0.5 + 0.5;
-                    element.firstElementChild.style.fontSize = scale + 'em';
+        animate();
+
+        function animate() {
+            let title = animateTitle(500);
+            title.complete = function(anim) {
+                showWorld(0);
+                let toVegas = animatePlanesToVegas(1000);
+                toVegas.changeBegin = function(anim) {
+                    animateCivilInfo(0);
                 }
+                toVegas.complete = function(anim) {
+                    let toRosario = animatePlanesToRosario(2000);
+                    toRosario.changeBegin = function(anim) {
+                        animateCeremonyInfo(0);
+                        animateReceptionInfo(1000);
+                    }
+                }
+            }
+        }
+
+        function showWorld(delay) {
+            return anime({
+                targets: '.world svg',
+                opacity: 1,
+                easing: 'easeInOutSine',
+                delay: delay,
+                duration: 400
             });
+        }
+
+        function animatePlanesToVegas(delay) {
+            return animatePlanes('to-vegas', 'v', delay);
+        }
+
+        function animatePlanesToRosario(delay) {
+            return animatePlanes('to-rosario', 'r', delay);
+        }
+        
+        function animatePlanes(group, descriptor, initialDelay) {
+            var timeline = anime.timeline({
+                easing: 'easeInOutQuad'
+            });
+
+            let pathsCount = document.querySelectorAll('#' + group + ' path').length;
+            let totalDuration = 0;
+            let i;
+            for (i = 0; i < pathsCount; i++) {
+                let path = anime.path('#' + descriptor + i);
+                let pathLength = path('x').totalLength;
+                let element = document.getElementById('p' + i);
+
+                let duration = pathLength * 15;
+                let delay = initialDelay + totalDuration * 0.3;
+                
+                timeline.add({
+                    targets: element,
+                    translateX: path('x'),
+                    translateY: path('y'),
+                    rotate: path('angle'),
+                    easing: 'easeInOutQuad',
+                    duration: duration,
+                    changeBegin: function(anim) {
+                        element.style.visibility = "visible";
+                    },
+                    changeComplete: function(anim) {
+                        element.style.visibility = "hidden";
+                    },
+                    change: function(anim) {
+                        var t = anim.currentTime / anim.duration;
+                        var scale = Math.sin(t * Math.PI) * 0.5 + 0.5;
+                        element.firstElementChild.style.fontSize = scale + 'em';
+                    }
+                }, delay);
+
+                totalDuration += duration;
+            }
+
+            return timeline;
+        }
+
+        function animateCivilInfo(delay) {
+            return animateInfo('civil', delay)
+        }
+
+        function animateCeremonyInfo(delay) {
+            return animateInfo('ceremony', delay)
+        }
+
+        function animateReceptionInfo(delay) {
+            return animateInfo('reception', delay)
+        }
+
+        function animateInfo(descriptor, delay) {
+            return anime({
+                targets: '.info #' + descriptor,
+                translateX: [50, 0],
+                opacity: 1,
+                easing: 'easeInOutSine',
+                delay: delay
+            });
+        }
+
+        function animateTitle(delay) {
+            let element = document.getElementById('title-span');
+
+            var timeline = anime.timeline();
+
+            timeline.add({
+                targets: element,
+                fontWeight: 600,
+                duration: 500,
+                easing: 'easeInSine',
+                changeComplete: function(anim) {
+                    element.innerHTML = "Hughes";
+                },
+            }, delay);
+            timeline.add({
+                targets: element,
+                fontSize: ['100%', '135%'],
+                color: '#e6d9c1',
+                rotate: -5,
+                easing: 'easeOutBounce',
+                duration: 1500
+            }, delay);
+
+            return timeline;
         }
     </script>
 </body>

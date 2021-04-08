@@ -107,15 +107,33 @@ textarea,
     position: fixed;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        background: $dark-background;
+        margin: 0;
+        padding: 10px 0;
+        z-index: 3;
+        font-size: 3em;
+        color: $accent-color;
+        font-weight: 100;
+        text-align: center;
+        span {
+            display: inline-flex;
+        }
+    }
 
     .world {
         position: absolute;
-        height: 100%;
-        top: -25px;
-        transform: translateX(-50px);
+        height: 97%;
+        top: 25px;
+        bottom: 25px;
+        transform: translateX(-30px);
         svg {
             position: absolute;
             height: 100%;
+            opacity: 0;
         }
         .plane {
             position: absolute;
@@ -132,23 +150,8 @@ textarea,
         position: absolute;
         height: 100%;
         left: 50%;
-        h1 {
-            font-size: 3em;
-            color: $accent-color;
-            font-weight: 100;
-            .highlight {
-                font-weight: bold;
-                font-size: 115%;
-                visibility: hidden;
-                display: inline-flex;
-                color: $primary-color;
-                visibility: hidden;
-                span {
-                    position: absolute;
-                    transform: rotate(-5deg);
-                    visibility: visible;
-                }
-            }
+        div {
+            opacity: 0;
         }
         h2 {
             margin: 3em 0 0;
