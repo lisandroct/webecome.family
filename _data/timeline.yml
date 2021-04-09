@@ -3,32 +3,36 @@
   title: It's a boy!
   image: pic01.jpg
   content: |
-    **Hello world**, this is my first Jekyll blog post.
-    I hope you like it!
+    Awwwww baby Lichi <3333 
 
 - date: 1998-12-31
   protagonist: her
   title: It's a girl!
   image: pic02.jpg
   content: |
-    **Hello world**, this is my first Jekyll blog post.
-    I hope you like it!
+    6lbs , 9 ozs, (idk I'm making this up), Gillian was
+    born on new years eve, 1998. Needless to say, her
+    mom has never had a new year's celebration quite
+    like it.
 
 - date: 2014-07-01
   protagonist: him
   title: Something Li did
   image: pic03.jpg
   content: |
-    **Hello world**, this is my first Jekyll blog post.
-    I hope you like it!
+    jokes about not doing homework, etc
 
 - date: 2017-05-26
   protagonist: her
-  title: gradjiation
-  image: pic03.jpg
+  title: High School Graduation
+  image: pic04.jpg
   content: |
-    **Hello world**, this is my first Jekyll blog post.
-    I hope you like it!
+    You know what they say: opposites attract! Gillian was
+    ever the shy, studious girl, spending hours studying
+    and thinking an A- was the end of the world. Despite
+    a few worlds ending, she made it to graduation and
+    went on to study computer science at DePauw, inevitably
+    leading her to an internship where she would meet Lichi! 
 
 - date: 2018-07-27
   protagonist: them
@@ -44,7 +48,7 @@
 - date: 2018-08-02
   protagonist: them
   title: Off nights at Stanford
-  image: pic02.jpg
+  image: pic06.jpg
   content: |
     They worked on the same team that summer, so they spent
     a lot of time together. On their off nights, 
@@ -57,7 +61,7 @@
 - date: 2018-11-08
   protagonist: them
   title: Distance makes the heart grow fonder
-  image: pic03.jpg
+  image: pic07.jpg
   content: |
     They started dating the last week Gillian was at camp, 
     then she was off to school, and he was headed back to
@@ -67,8 +71,8 @@
 
 - date: 2019-12-28
   protagonist: them
-  title: First airport reunion
-  image: pic03.jpg
+  title: Hola, amor ;)
+  image: pic08.jpg
   content: |
     Happy airport reunion 1! Gillian got a passport and
     hopped on a plane to visit Lichi in Argentina.
@@ -80,15 +84,17 @@
 - date: 2019-01-08
   protagonist: them
   title: Argentina adventures!
-  image: pic05.jpg
+  image: pic09.jpg
   content: |
     Empanadas, Espanol, Asado, traveler's diarrhea... our first 
-    reunion was quite the experience.
+    reunion was quite the experience.Lichi was very sweet, showing
+    Gillian around his city, introducing her to his friends and 
+    family, and translating everything for her.
 
 - date: 2019-07-27
   protagonist: them
-  title: Second summer at Stanford
-  image: pic05.jpg
+  title: Second summer with the rich kids
+  image: pic10.jpg
   content: |
     Half a year later, they happily reunited at camp. During the 
     day, they had to pretend that they barely knew each other.
@@ -100,49 +106,62 @@
 - date: 2019-08-01
   protagonist: them
   title: Goodbye
-  image: pic02.jpg
+  image: pic11.jpg
   content: |
-    Big sad.
+    Every goodbye was harder than the last. Going from hand holding
+    to video calling was heartbreaking, but they were good at it--
+    they had a lot of experience.
 
 - date: 2019-11-24
   protagonist: them
-  title: Hello (chicago)
-  image: pic03.jpg
+  title: Pure Joy
+  image: pic12.jpg
   content: |
-    Pure joy. 
-
-- date: 2019-11-25
-  protagonist: them
-  title: christmas tree picture
-  image: pic03.jpg
-  content: |
-    'Merica
+    Another long awaited reunion. Lichi came to spend Thanksgiving
+    with Gillian's family, braving the cold for her. He loved 
+    picking out a live Christmas tree with the family. Then 
+    Gillian flew home with him to Argentina for Christmas. She
+    sang Christmas carols in Spanish and fell asleep on Christmas 
+    (they stay up so late in Tina!). It was a glorious several
+    weeks together. 
 
 - date: 2020-01-09
   protagonist: them
   title: goodbye
-  image: pic05.jpg
+  image: pic14.jpg
   content: |
     Parting is always hard... little did we know this 
     time we'd be apart for an entire year!
 
 - date: 2020-07-14
   protagonist: them
-  title: LDR
-  image: pic05.jpg
+  title: What's kissing like, again?
+  image: pic15.jpg
   content: |
-    Year of video calling
+    A year of video calling, sponsored by COVID. So many
+    plans to see each other derailed. So many long nights
+    spent calling. So many I miss you texts. But, despite
+    bad wifi connections, time differences, and many 
+    tears, we prevailed!
 
 - date: 2021-01-03
   protagonist: them
-  title: Together again--finally!
-  image: pic02.jpg
+  title: So this is what we've been missing out on!
+  image: pic16.jpg
   content: |
-    Yay!
+    Yay! The long awaited hug and kiss finally arrived!
+    (Though slightly delayed because of stupid airport
+    mask rules.) 
 
 - date: 2021-01-31
   protagonist: them
   title: Yes!         (finally)
-  image: pic03.jpg
+  image: pic17.jpg
   content: |
-    :)))
+    Sweet Lichi told Gillian he wanted to take a time
+    lapse of the sunrising in Houston. They woke up at
+    the crack of dawn, set up a tripod in a park, and
+    froze their butts off watching the sunrise. Lichi
+    gave Gillian a photo album with 'Will you marry me?'
+    hidden in the pages. When she looked up, he was on
+    one knee. <3
