@@ -16,9 +16,9 @@ $secondary-accent-color: #185099;
 $secondary-accent-shade: #0269ee;
 
 $timeline-line-thickness: 4px;
-$he-color: #548de6;
-$she-color: #b462c1;
-$they-color: $accent-color;
+$him-color: #548de6;
+$her-color: #b462c1;
+$them-color: $accent-color;
 
 $menu-size: 250px;
 
@@ -179,6 +179,8 @@ textarea,
     position: fixed;
     height: 60%;
     width: 100%;
+    background-size: cover;
+    background-position: center;
     h1 {
         position: absolute;
         text-align: center;
@@ -266,11 +268,11 @@ textarea,
                     max-width: 80%;
                     max-height: 80%;
                 }
-                &.he {
-                    background: $he-color;
+                &.him {
+                    background: $him-color;
                 }
-                &.she {
-                    background: $she-color;
+                &.himr {
+                    background: $her-color;
                 }
             }
             h1 {
@@ -401,11 +403,11 @@ textarea,
                         max-width: 80%;
                         max-height: 80%;
                     }
-                    &.he {
-                        background: $he-color;
+                    &.him {
+                        background: $him-color;
                     }
-                    &.she {
-                        background: $she-color;
+                    &.himr {
+                        background: $her-color;
                     }
                 }
                 h1 {
