@@ -34,7 +34,7 @@ $menu-size: 250px;
 body {
     line-height: normal;
     color: $primary-color;
-    font-size: 13px;
+    font-size: 0.9em;
     background: $dark-background;
 }
 
@@ -43,9 +43,11 @@ button,
 input,
 select,
 textarea,
+.pure-g,
 .pure-g [class*="pure-u"] {
     font-family: $montserrat;
     font-weight: 300;
+    letter-spacing: .1em;
     a {
         color: $secondary-accent-color;
         text-decoration: none;
@@ -274,7 +276,7 @@ textarea,
                 &.him {
                     background: $him-color;
                 }
-                &.himr {
+                &.her {
                     background: $her-color;
                 }
             }
@@ -409,7 +411,7 @@ textarea,
                     &.him {
                         background: $him-color;
                     }
-                    &.himr {
+                    &.her {
                         background: $her-color;
                     }
                 }
