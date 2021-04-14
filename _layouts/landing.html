@@ -38,21 +38,30 @@
     </div>
     {% include scripts.html %}
     <script>
+        window.onresize = resizeSplash;
+
+        function resizeSplash() {
+            let world = document.querySelector('.landing-splash svg');
+            let title = document.querySelector('.landing-splash h1');
+            world.style.maxHeight = (window.innerHeight - title.clientHeight) + 'px';
+        }
+
         animate();
 
         function animate() {
             let title = animateTitle(500);
             title.complete = function(anim) {
+                resizeSplash();
                 showWorld(0);
-                let toVegas = animatePlanesToVegas(1000);
+                let toVegas = animatePlanesToRosario(1000);
                 toVegas.changeBegin = function(anim) {
-                    animateCivilInfo(0);
+                    animateCeremonyInfo(0);
+                    animateReceptionInfo(1000);
                 }
                 toVegas.complete = function(anim) {
-                    let toRosario = animatePlanesToRosario(2000);
+                    let toRosario = animatePlanesToVegas(2000);
                     toRosario.changeBegin = function(anim) {
-                        animateCeremonyInfo(0);
-                        animateReceptionInfo(1000);
+                        animateCivilInfo(0);
                     }
                 }
             }
@@ -107,8 +116,8 @@
                     },
                     change: function(anim) {
                         var t = anim.currentTime / anim.duration;
-                        var scale = Math.sin(t * Math.PI) * 0.5 + 0.5;
-                        element.firstElementChild.style.fontSize = scale + 'em';
+                        var scale = Math.sin(t * Math.PI) * 0.5 + 0.7;
+                        element.firstElementChild.style.transform = 'scale( ' + scale + ')';
                     }
                 }, delay);
 

@@ -98,6 +98,9 @@ textarea,
 .frame {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 /*
@@ -113,54 +116,54 @@ textarea,
     h1 {
         background: $dark-background;
         margin: 0;
-        padding: 10px 0;
+        padding: 10px 70px;
         z-index: 3;
         font-size: 3em;
         color: $accent-color;
         font-weight: 100;
         text-align: center;
+        width: 100%;
         span {
             display: inline-flex;
         }
     }
 
-    .world {
-        position: absolute;
-        height: 97%;
-        top: 25px;
-        bottom: 25px;
-        transform: translateX(-30px);
-        svg {
-            position: absolute;
-            height: 100%;
-            opacity: 0;
+    .frame {
+        .world {
+            display: inline-flex;
+            flex-basis: 60%;
+            justify-content: center;
+            align-items: flex-start;
+            svg {
+                padding: 0 20px;
+                opacity: 0;
+            }
         }
-        .plane {
-            position: absolute;
-            font-size: 4em;
-            visibility: hidden;
-            i {
-                position: absolute;
-                transform: translate(-50%, -50%);
+    
+        .info {
+            flex-basis: 40%;
+            div {
+                opacity: 0;
+            }
+            h2 {
+                margin: 3em 0 0;
+                font-family: $libre-baskerville;
+            }
+            h3 {
+                font-weight: 100;
+                margin: 0 0 1em;
             }
         }
     }
+}
 
-    .info {
+.plane {
+    position: absolute;
+    font-size: 4em;
+    visibility: hidden;
+    i {
         position: absolute;
-        height: 100%;
-        left: 50%;
-        div {
-            opacity: 0;
-        }
-        h2 {
-            margin: 3em 0 0;
-            font-family: $libre-baskerville;
-        }
-        h3 {
-            font-weight: 100;
-            margin: 0 0 1em;
-        }
+        transform: translate(-50%, -50%);
     }
 }
 
