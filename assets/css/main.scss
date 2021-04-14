@@ -185,22 +185,23 @@ textarea,
     height: 60%;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     h1 {
         position: absolute;
         text-align: center;
         width: 100%;
-        top: 30%;
+        top: 40%;
         margin: 0;
         font-size: 4em;
-        color: $dark-background;
+        color: $accent-color;
         font-family: $libre-baskerville;
+        text-shadow: 0 2px 5px $dark-background;
     }
 }
 
 .list-content {
     position: absolute;
-    background: $blue-background;
+    background: $dark-background;
     width: 100%;
     top: 60%;
     z-index: 1;
@@ -283,6 +284,7 @@ textarea,
             h1 {
                 margin: 0;
                 padding-left: 10px;
+                text-shadow: 0 2px 3px $dark-background;
             }
         }
         .timeline-description {
