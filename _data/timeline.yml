@@ -22,6 +22,15 @@
   content: |
     Awwwww school Lichi <3333 
 
+- date: 2006-10-20
+  protagonist: her
+  title: Pumpkin Pickin'
+  image: generic.jpg
+  content: |
+    Nolan and Gillian chose the biggest pumpkins in the 
+    patch to carve for Halloween. Clearly Gillian has
+    always liked a good workout.
+
 - date: 2010-12-05
   protagonist: him
   title: Highschool graduation
@@ -47,6 +56,18 @@
     a few worlds ending, she made it to graduation and
     went on to study computer science at DePauw, inevitably
     leading her to an internship where she would meet Lichi! 
+
+- date: 2017-08-23
+  protagonist: her
+  title: It's a girl!
+  image: generic.jpg
+  content: |
+    Like the picture says... first day of 13th grade!
+    Gillian started her bachelor's degree in 2017 at
+    DePauw University. There, she made a lot of wonderful
+    friends, learned she loved HIIT workouts, and discovered
+    computer science... all which lead her to an internship
+    at Stanford, where she met Prince Charming. 
 
 - date: 2018-07-27
   protagonist: them
@@ -90,7 +111,7 @@
   content: |
     Happy airport reunion 1! Gillian got a passport and
     hopped on a plane to visit Lichi in Argentina.
-    She'd never been out of the country before, nor does
+    She'd never been out of the country before, nor did
     she speak Spanish, so it was quite the experience. 
     She threw up on the airport tarmac because she was so 
     nervous and excited. Lisandro still kissed her. #keeper
@@ -141,11 +162,11 @@
 
 - date: 2020-01-09
   protagonist: them
-  title: goodbye
+  title: Goodbye
   image: 2020-01-09.jpg
   content: |
-    Parting is always hard... little did we know this 
-    time we'd be apart for an entire year!
+    Parting is always hard... little did they know this 
+    time they'd be apart for an entire year!
 
 - date: 2020-07-14
   protagonist: them
@@ -156,7 +177,7 @@
     plans to see each other derailed. So many long nights
     spent calling. So many I miss you texts. But, despite
     bad wifi connections, time differences, and many 
-    tears, we prevailed!
+    tears, they prevailed!
 
 - date: 2021-01-03
   protagonist: them
