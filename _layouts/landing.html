@@ -42,9 +42,19 @@
         window.onresize = resizeSplash;
 
         function resizeSplash() {
-            let world = document.querySelector('.landing-splash svg');
-            let title = document.querySelector('.landing-splash h1');
-            world.style.maxHeight = (window.innerHeight - title.clientHeight) + 'px';
+            let landingSplash = document.querySelector('.landing-splash');
+
+            let world = landingSplash.querySelector('svg');
+            let title = landingSplash.querySelector('h1');
+            let info = landingSplash.querySelector('.info');
+            let maxHeight = window.innerHeight - title.clientHeight;
+            if(info.clientWidth > info.clientHeight) {
+                maxHeight -= info.clientHeight;
+            }
+            world.style.maxHeight = maxHeight + 'px';
+
+            let landingContent = document.querySelector('.landing-content');
+            landingContent.style.top = landingSplash.clientHeight + 'px';
         }
 
         animate();

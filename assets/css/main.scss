@@ -100,18 +100,12 @@ textarea,
 .frame {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
 }
 
 /*
 * -- LANDING --
 */
 .landing-splash {
-    position: fixed;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -120,7 +114,6 @@ textarea,
         margin: 0;
         padding: 10px 70px;
         z-index: 3;
-        font-size: 3em;
         color: $accent-color;
         font-weight: 100;
         text-align: center;
@@ -132,10 +125,6 @@ textarea,
 
     .frame {
         .world {
-            display: inline-flex;
-            flex-basis: 60%;
-            justify-content: center;
-            align-items: flex-start;
             svg {
                 padding: 0 20px;
                 opacity: 0;
@@ -143,7 +132,6 @@ textarea,
         }
     
         .info {
-            flex-basis: 40%;
             div {
                 opacity: 0;
             }
@@ -356,6 +344,16 @@ textarea,
 }
 
 /*
+* -- SMALL --
+*/
+@media screen and (min-width: 568px) {
+    .landing-splash {        
+        position: fixed;
+        height: 100%;
+    }
+}
+
+/*
 * -- MEDIUM --
 */
 @media screen and (min-width: 768px) {
@@ -470,6 +468,19 @@ textarea,
 * -- LARGE --
 */
 @media screen and (min-width: 1024px) {
+    .landing-splash {
+        h1 {
+            font-size: 3em;
+        }
+        .frame {
+            .world {
+                svg {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+
     .list-content {
         #content {
             .grid {

@@ -6,9 +6,9 @@ layout: landing
 {% assign reception = site.data.events['reception'] %}
 
 <h1>The Crespo Wedding is <span id="title-span">huge</span>!</h1>
-<div class="frame">
-    <div class="world">
-        <svg viewBox="0 0 204.85809 276.11475">
+<div class="frame pure-g">
+    <div class="world pure-u-1 pure-u-lg-2-3">
+        <svg class="pure-img" viewBox="0 0 204.85809 276.11475">
             <g id="markers" style="fill:#185099;fill-opacity:1;stroke:none;stroke-width:4.99998999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" >
                 <path d="m 148.98061,193.09974 c -2.18643,0 -3.96861,1.78248 -3.96861,3.9689 0,2.18642 1.78218,3.9686 3.96861,3.9686 2.18642,0 3.96889,-1.78218 3.96889,-3.9686 0,-2.18642 -1.78247,-3.9689 -3.96889,-3.9689 z m 0,0.91825 c 1.69029,0 3.05064,1.36035 3.05064,3.05065 0,1.69029 -1.36035,3.05064 -3.05064,3.05064 -1.69029,0 -3.05065,-1.36035 -3.05065,-3.05064 0,-1.6903 1.36036,-3.05065 3.05065,-3.05065 z m -0.0172,0.77355 a 2.2770908,2.2770908 0 0 0 -2.2599,2.2771 2.2770908,2.2770908 0 0 0 2.27709,2.27709 2.2770908,2.2770908 0 0 0 2.2771,-2.27709 2.2770908,2.2770908 0 0 0 -2.2771,-2.2771 2.2770908,2.2770908 0 0 0 -0.0172,0 z" />
                 <path d="m 32.946634,36.9459 c -2.186421,0 -3.968602,1.78247 -3.968602,3.96889 0,2.18642 1.782181,3.96861 3.968602,3.96861 2.186421,0 3.968898,-1.78219 3.968898,-3.96861 0,-2.18642 -1.782477,-3.96889 -3.968898,-3.96889 z m 0,0.91825 c 1.690293,0 3.050649,1.36035 3.050649,3.05064 0,1.6903 -1.360356,3.05065 -3.050649,3.05065 -1.69029,0 -3.050651,-1.36035 -3.050651,-3.05065 0,-1.69029 1.360361,-3.05064 3.050651,-3.05064 z m -0.0172,0.77355 a 2.2770908,2.2770908 0 0 0 -2.259896,2.27709 2.2770908,2.2770908 0 0 0 2.277091,2.2771 2.2770908,2.2770908 0 0 0 2.277092,-2.2771 2.2770908,2.2770908 0 0 0 -2.277092,-2.27709 2.2770908,2.2770908 0 0 0 -0.0172,0 z" />
@@ -112,26 +112,28 @@ layout: landing
         </svg>
     </div>
 
-    <div class="info">
-        <div id="ceremony">
-            <h2>{{ wedding.title }}</h2>
-            <h3>{{ wedding.date }}<br />{{ wedding.time }}</h3>
-            <p>{{ wedding.location | newline_to_br }}</p>
-            <p>Attire: {{ wedding.attire }}</p>
-            <p>{{ wedding.subtitle }}</p>
-        </div>
-        <div id="reception">
-            <h2>{{ reception.title }}</h2>
-            <h3>{{ reception.date }}<br />{{ reception.time }}</h3>
-            <p>{{ reception.location }}</p>
-            <p>Attire: {{ reception.attire }}</p>
-            <p>{{ reception.subtitle }}</p>
-        </div>
-        <div id="civil">
-            <h2>{{ civil.title }}</h2>
-            <h3>{{ civil.date }}<br />{{ civil.time }}</h3>
-            <p>Attire: {{ civil.attire }}</p>
-            <p>{{ civil.subtitle }}</p>
+    <div class="pure-u-1 pure-u-lg-1-3">
+        <div class="info pure-g">
+            <div class="pure-u-1 pure-u-sm-1-3 pure-u-lg-1" id="ceremony">
+                <h2>{{ wedding.title }}</h2>
+                <h3>{{ wedding.date }}<br />{{ wedding.time }}</h3>
+                <p>{{ wedding.location | newline_to_br }}</p>
+                <p>Attire: {{ wedding.attire }}</p>
+                <p>{{ wedding.subtitle }}</p>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-3 pure-u-lg-1" id="reception">
+                <h2>{{ reception.title }}</h2>
+                <h3>{{ reception.date }}<br />{{ reception.time }}</h3>
+                <p>{{ reception.location }}</p>
+                <p>Attire: {{ reception.attire }}</p>
+                <p>{{ reception.subtitle }}</p>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-3 pure-u-lg-1" id="civil">
+                <h2>{{ civil.title }}</h2>
+                <h3>{{ civil.date }}<br />{{ civil.time }}</h3>
+                <p>Attire: {{ civil.attire }}</p>
+                <p>{{ civil.subtitle }}</p>
+            </div>
         </div>
     </div>
 </div>
