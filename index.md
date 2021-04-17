@@ -5,7 +5,7 @@ layout: landing
 {% assign wedding = site.data.events['wedding'] %}
 {% assign reception = site.data.events['reception'] %}
 
-<h1>The Crespo Wedding is <span id="title-span">huge</span>!</h1>
+<h1>The Crespo Wedding is <span><span id="title-span">huge</span>!</span></h1>
 <div class="frame pure-g">
     <div class="world pure-u-1 pure-u-lg-2-3">
         <svg class="pure-img" viewBox="0 0 204.85809 276.11475">

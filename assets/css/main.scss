@@ -133,6 +133,7 @@ textarea,
     
         .info {
             div {
+                padding: 0 40px;
                 opacity: 0;
             }
             h2 {
@@ -471,13 +472,6 @@ textarea,
     .landing-splash {
         h1 {
             font-size: 3em;
-        }
-        .frame {
-            .world {
-                svg {
-                    padding: 0 20px;
-                }
-            }
         }
     }
 
