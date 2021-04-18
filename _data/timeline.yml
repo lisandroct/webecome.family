@@ -1,31 +1,29 @@
 - date: 1992-12-05
   protagonist: him
   title: It's a boy!
-  image: 1992-12-05.jpg
   content: |
-    Awwwww baby Lichi <3333 
+    In troubled and gray times, Marta was pregnant and the world was sad. Then Lisandro was born and the universe never was the same again.
+
+    I might be biased but at least that's how I remember the story.
+
+- date: 1998-03-01
+  protagonist: him
+  title: Kid Lichi
+  content: |
+    A few months before Gillian was born, Lichi was starting elementary school. Before the era of digital photography, Marta paid for a nice picture of her kid smiling in class. This is what she got.  
 
 - date: 1998-12-31
   protagonist: her
   title: It's a girl!
-  image: generic.jpg
   content: |
     7lbs , 2 ozs, 21", Gillian was
     born on new years eve, 1998. Needless to say, her
     mom has never had a new year's celebration quite
     like it.
 
-- date: 1998-07-01
-  protagonist: him
-  title: Kid Lichi
-  image: 1998-07-01.jpg
-  content: |
-    Awwwww school Lichi <3333 
-
 - date: 2006-10-20
   protagonist: her
   title: Pumpkin Pickin'
-  image: 2006-10-20.jpg
   content: |
     Nolan and Gillian chose the biggest pumpkins in the 
     patch to carve for Halloween. Clearly Gillian has
@@ -33,15 +31,19 @@
 
 - date: 2010-12-05
   protagonist: him
-  title: Highschool graduation
-  image: 2014-07-01.jpg
+  title: High school is over
   content: |
-    At least he finished highschool...
+    After 17 years of hard work, sweat and tears, high school is finally over.
+    
+    Okay... that's a lie. It's not that he didn't learn anything, for example, we can see him here at a very productive Economy class where he learnt how to create a bubble inception successfuly.
+    
+    Teachers, I'm sorry.
+    
+    Not really.
 
 - date: 2017-05-26
   protagonist: her
   title: High school graduation
-  image: 2017-05-26.jpg
   content: |
     You know what they say: opposites attract! Gillian was
     ever the shy, studious girl, spending hours studying
@@ -53,7 +55,6 @@
 - date: 2017-08-23
   protagonist: her
   title: Over priced high school
-  image: 2017-08-23.jpg
   content: |
     Like the picture says... first day of 13th grade!
     Gillian started her bachelor's degree in 2017 at
@@ -65,7 +66,6 @@
 - date: 2018-07-27
   protagonist: them
   title: He was charming <3
-  image: 2018-07-27.jpg
   content: |
     The first time they laid eyes on each other was when 
     Gillian was trying to lug three heavy bags, and Lichi
@@ -76,7 +76,6 @@
 - date: 2018-08-02
   protagonist: them
   title: Off nights at Stanford
-  image: 2018-08-02.jpg
   content: |
     They worked on the same team that summer, so they spent
     a lot of time together. On their off nights, 
@@ -89,7 +88,6 @@
 - date: 2018-11-08
   protagonist: them
   title: Distance makes the heart grow fonder
-  image: 2018-11-08.png
   content: |
     They started dating the last week Gillian was at camp, 
     then she was off to school, and he was headed back to
@@ -100,7 +98,6 @@
 - date: 2018-12-28
   protagonist: them
   title: Hola, amor ;)
-  image: 2018-12-28.jpg
   content: |
     Happy airport reunion 1! Gillian got a passport and
     hopped on a plane to visit Lichi in Argentina.
@@ -112,7 +109,6 @@
 - date: 2019-01-08
   protagonist: them
   title: Argentina adventures!
-  image: 2019-01-08.jpg
   content: |
     Empanadas, Espanol, Asado, traveler's diarrhea... our first 
     reunion was quite the experience.Lichi was very sweet, showing
@@ -122,7 +118,6 @@
 - date: 2019-07-27
   protagonist: them
   title: Second summer with the rich kids
-  image: 2019-07-27-1.jpg
   content: |
     Half a year later, they happily reunited at camp. During the 
     day, they had to pretend that they barely knew each other.
@@ -134,7 +129,6 @@
 - date: 2019-08-01
   protagonist: them
   title: Goodbye
-  image: 2019-08-01.jpg
   content: |
     Every goodbye was harder than the last. Going from hand holding
     to video calling was heartbreaking, but they were good at it--
@@ -143,7 +137,6 @@
 - date: 2019-11-24
   protagonist: them
   title: Pure Joy
-  image: 2019-11-24-1.jpg
   content: |
     Another long awaited reunion. Lichi came to spend Thanksgiving
     with Gillian's family, braving the cold for her. He loved 
@@ -156,7 +149,6 @@
 - date: 2020-01-09
   protagonist: them
   title: Goodbye
-  image: 2020-01-09.jpg
   content: |
     Parting is always hard... little did they know this 
     time they'd be apart for an entire year!
@@ -164,7 +156,6 @@
 - date: 2020-07-14
   protagonist: them
   title: What's kissing like, again?
-  image: 2020-07-14.png
   content: |
     A year of video calling, sponsored by COVID. So many
     plans to see each other derailed. So many long nights
@@ -175,7 +166,6 @@
 - date: 2021-01-03
   protagonist: them
   title: So this is what we've been missing out on!
-  image: 2021-01-03.jpg
   content: |
     Yay! The long awaited hug and kiss finally arrived!
     (Though slightly delayed because of stupid airport
@@ -184,7 +174,6 @@
 - date: 2021-01-31
   protagonist: them
   title: Yes!         (finally)
-  image: 2021-01-31.jpg
   content: |
     Sweet Lichi told Gillian he wanted to take a time
     lapse of the sunrising in Houston. They woke up at
