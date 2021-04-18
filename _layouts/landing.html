@@ -61,21 +61,33 @@
         animate();
 
         function animate() {
+            let mobile = window.innerWidth <= 567;
+
             let title = animateTitle(500);
             title.complete = function(anim) {
                 resizeSplash();
                 showWorld(0);
                 let toVegas = animatePlanesToRosario(1000);
-                toVegas.changeBegin = function(anim) {
-                    animateCeremonyInfo(0);
-                    animateReceptionInfo(1000);
+                if(!mobile) {
+                    toVegas.changeBegin = function(anim) {
+                        animateCeremonyInfo(0);
+                        animateReceptionInfo(1000);
+                    }
                 }
                 toVegas.complete = function(anim) {
                     let toRosario = animatePlanesToVegas(500);
-                    toRosario.changeBegin = function(anim) {
-                        animateCivilInfo(0);
+                    if(!mobile) {
+                        toRosario.changeBegin = function(anim) {
+                            animateCivilInfo(0);
+                        }
                     }
                 }
+            }
+
+            if(mobile) {
+                document.getElementById('ceremony').style.opacity = 1;
+                document.getElementById('reception').style.opacity = 1;
+                document.getElementById('civil').style.opacity = 1;
             }
         }
 

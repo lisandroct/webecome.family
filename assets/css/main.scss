@@ -133,15 +133,13 @@ textarea,
     
         .info {
             div {
-                padding: 0 40px;
+                padding: 0 40px 3em;
                 opacity: 0;
             }
             h2 {
-                margin: 3em 0 0;
                 font-family: $libre-baskerville;
             }
             h3 {
-                font-weight: 100;
                 margin: 0 0 1em;
             }
         }
@@ -360,6 +358,13 @@ textarea,
     .landing-splash {        
         position: fixed;
         height: 100%;
+        .frame {
+            .info {
+                div {
+                    padding: 3em 40px 1em;
+                }
+            }
+        }
     }
 }
 
