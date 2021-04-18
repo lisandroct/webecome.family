@@ -10,7 +10,7 @@
   title: It's a girl!
   image: generic.jpg
   content: |
-    6lbs , 9 ozs, (idk I'm making this up), Gillian was
+    7lbs , 2 ozs, 21", Gillian was
     born on new years eve, 1998. Needless to say, her
     mom has never had a new year's celebration quite
     like it.
@@ -25,7 +25,7 @@
 - date: 2006-10-20
   protagonist: her
   title: Pumpkin Pickin'
-  image: generic.jpg
+  image: 2006-10-20.jpg
   content: |
     Nolan and Gillian chose the biggest pumpkins in the 
     patch to carve for Halloween. Clearly Gillian has
@@ -47,7 +47,7 @@
 
 - date: 2017-05-26
   protagonist: her
-  title: High School Graduation
+  title: High school graduation
   image: 2017-05-26.jpg
   content: |
     You know what they say: opposites attract! Gillian was
@@ -59,8 +59,8 @@
 
 - date: 2017-08-23
   protagonist: her
-  title: It's a girl!
-  image: generic.jpg
+  title: Over priced high school
+  image: 2017-08-23.jpg
   content: |
     Like the picture says... first day of 13th grade!
     Gillian started her bachelor's degree in 2017 at
