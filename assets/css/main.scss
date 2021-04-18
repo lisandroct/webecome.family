@@ -362,7 +362,7 @@ textarea,
         #content {
             .grid {
                 .question {
-                    height: 300px;
+                    min-height: 300px;
                     padding: 30px;
                     &:nth-child(n) {
                         &:nth-child(6n - 11) {
