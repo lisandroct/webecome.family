@@ -1,5 +1,4 @@
 {% capture page-name %}{{ page.name | remove:'.md' }}{% endcapture %}
-
 <!DOCTYPE html>
 <html>
     {% include head.html %}
@@ -13,12 +12,7 @@
                 <h1>{{ page.subtitle }}</h1>
                 <p class="description">{{ page.description }}</p>
                 <div class="grid pure-g">
-                    {% for item in site.data[page-name] %}
-                        <div class="question pure-u-1 pure-u-md-1-2">
-                            <h1>{{ item.title }}</h1>
-                            <p>{{ item.content | markdownify }}</p>
-                        </div>
-                    {% endfor %}
+                    {{ content }}
                 </div>
             </section>
             {% include footer.html %}
