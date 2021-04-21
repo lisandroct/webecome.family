@@ -49,6 +49,15 @@
             let title = landingSplash.querySelector('h1');
             let info = landingSplash.querySelector('.info');
             let maxHeight = window.innerHeight - title.clientHeight;
+            if(info.clientHeight > maxHeight) {
+                let scale = maxHeight / info.clientHeight;
+                info.style.transformOrigin = 'top';
+                info.style.transform = 'scale(' + scale  + ')';
+            } else {
+                
+                info.style.transformOrigin = null;
+                info.style.transform = null;
+            }
             if(info.clientWidth > info.clientHeight) {
                 maxHeight -= info.clientHeight;
             }
