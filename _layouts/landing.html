@@ -51,7 +51,7 @@
             let maxHeight = window.innerHeight - title.clientHeight;
             if(info.clientHeight > maxHeight) {
                 let scale = maxHeight / info.clientHeight;
-                info.style.transformOrigin = 'top';
+                info.style.transformOrigin = 'left top';
                 info.style.transform = 'scale(' + scale  + ')';
             } else {
                 
