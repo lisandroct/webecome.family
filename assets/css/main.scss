@@ -167,7 +167,7 @@ textarea,
 /*
 * -- LIST --
 */
-.list-splash {
+.default-splash {
     position: fixed;
     height: 60%;
     width: 100%;
@@ -186,12 +186,14 @@ textarea,
     }
 }
 
-.list-content {
+.default-content {
     position: absolute;
     background: $dark-background;
     width: 100%;
     top: 60%;
+    min-height: 40%;
     z-index: 1;
+    padding-bottom: 220px;
     #content {
         padding: 30px 0 50px;
         h1 {
@@ -294,6 +296,9 @@ textarea,
 * -- FOOTER --
 */
 .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     background-color: $accent-shade;
     color: $dark-background;
     text-align: center;
@@ -380,7 +385,7 @@ textarea,
         display: inherit;
     }
 
-    .list-content {
+    .default-content {
         #content {
             .grid {
                 .question {
@@ -497,7 +502,7 @@ textarea,
         }
     }
 
-    .list-content {
+    .default-content {
         #content {
             .grid {
                 width: 960px;

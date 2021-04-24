@@ -3,12 +3,12 @@
     <span class="absolute top-right fas fa-times" onclick="closeNav()"></span>
     <ul class="pure-menu-list">
         <li class="pure-menu-item">
-            <a href="index.html" class="pure-menu-link">Home</a>
+            <a href="{{ site.url }}" class="pure-menu-link">Home</a>
         </li>
-        {% for my_page in site.pages %}
-            {% if my_page.title %}
+        {% for page in site.pages %}
+            {% if page.title and page.url != "/404" %}
                 <li class="pure-menu-item">
-                    <a href="{{ my_page.url | prepend: site.baseurl }}" class="pure-menu-link">{{ my_page.title }}</a>
+                    <a href="{{ page.url | prepend: site.baseurl }}" class="pure-menu-link">{{ page.title }}</a>
                 </li>
             {% endif %}
         {% endfor %}

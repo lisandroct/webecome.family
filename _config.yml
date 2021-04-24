@@ -7,6 +7,8 @@ description: |
 owner: Gillian and Lisandro
 first_published: 2021
 
+permalink: /:title
+
 email: hey@webecome.family
 
 markdown: kramdown

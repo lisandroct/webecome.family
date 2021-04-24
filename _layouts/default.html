@@ -4,16 +4,14 @@
     {% include head.html %}
     <body>
         {% include side-menu.html %}
-        <section class="list-splash content-container" style="background-image: url('/assets/images/{{ page-name }}.jpg');">
+        <section class="default-splash content-container" style="background-image: url('/assets/images/{{ page-name }}.jpg');">
             <h1>{{ page.title }}</h1>
         </section>
-        <div class="list-content content-container">
+        <div class="default-content content-container">
             <section id="content">
                 <h1>{{ page.subtitle }}</h1>
                 <p class="description">{{ page.description }}</p>
-                <div class="grid pure-g">
-                    {{ content }}
-                </div>
+                {{ content }}
             </section>
             {% include footer.html %}
         </div>
