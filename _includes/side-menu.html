@@ -1,16 +1,12 @@
+{% assign pages = site.pages | where: 'lang', page.lang | sort: 'menu-order' %}
 <span id="menu-button" class="fixed top-right fas fa-bars" onclick="openNav()"></span>
 <div id="menu" class="pure-menu">
     <span class="absolute top-right fas fa-times" onclick="closeNav()"></span>
     <ul class="pure-menu-list">
-        <li class="pure-menu-item">
-            <a href="{{ site.url }}" class="pure-menu-link">Home</a>
-        </li>
-        {% for page in site.pages %}
-            {% if page.title and page.url != "/404" %}
-                <li class="pure-menu-item">
-                    <a href="{{ page.url | prepend: site.baseurl }}" class="pure-menu-link">{{ page.title }}</a>
-                </li>
-            {% endif %}
+        {% for page in pages %}
+            <li class="pure-menu-item">
+                <a href="{{ page.url | prepend: site.baseurl }}" class="pure-menu-link">{{ page.menu | default: page.title }}</a>
+            </li>
         {% endfor %}
     </ul>
 </div>

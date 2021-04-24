@@ -4,10 +4,11 @@
 
 <body>
     {% include side-menu.html %}
+    {% assign i18n = site.data[page.lang] %}
     <div class="landing-splash content-container">
-        {% assign civil = site.data.events['civil'] %}
-        {% assign wedding = site.data.events['wedding'] %}
-        {% assign reception = site.data.events['reception'] %}
+        {% assign civil = site.data.events['civil'][page.lang] %}
+        {% assign wedding = site.data.events['wedding'][page.lang] %}
+        {% assign reception = site.data.events['reception'][page.lang] %}
         
         <h1>The Crespo Wedding is <span><span id="title-span">huge</span>!</span></h1>
         <div class="frame pure-g">
@@ -122,20 +123,20 @@
                         <h2>{{ wedding.title }}</h2>
                         <h3>{{ wedding.date }}<br />{{ wedding.time }}</h3>
                         <p>{{ wedding.location | newline_to_br }}</p>
-                        <p>Attire: {{ wedding.attire }}</p>
+                        <p>{{ i18n.attire }}: {{ wedding.attire }}</p>
                         <p>{{ wedding.subtitle }}</p>
                     </div>
                     <div class="pure-u-1 pure-u-sm-1-3 pure-u-lg-1" id="reception">
                         <h2>{{ reception.title }}</h2>
                         <h3>{{ reception.date }}<br />{{ reception.time }}</h3>
                         <p>{{ reception.location }}</p>
-                        <p>Attire: {{ reception.attire }}</p>
+                        <p>{{ i18n.attire }}: {{ reception.attire }}</p>
                         <p>{{ reception.subtitle }}</p>
                     </div>
                     <div class="pure-u-1 pure-u-sm-1-3 pure-u-lg-1" id="civil">
                         <h2>{{ civil.title }}</h2>
                         <h3>{{ civil.date }}<br />{{ civil.time }}</h3>
-                        <p>Attire: {{ civil.attire }}</p>
+                        <p>{{ i18n.attire }}: {{ civil.attire }}</p>
                         <p>{{ civil.subtitle }}</p>
                     </div>
                 </div>
@@ -145,30 +146,34 @@
     <div class="landing-content content-container">
         <div class="frame">
             <section id="timeline">
-                {% unless site.data.timeline == null %}
                 {% assign sortedTimeline = site.data.timeline | sort: 'date' %}
                 {% for event in sortedTimeline %}
-                {% assign protagonist = event.protagonist | slugify %}
-                <div class="pure-g">
-                    <div class="timeline-date">
-                        <div class="timeline-icon {{protagonist}}">
-                            <img class="pure-img" src="/assets/images/{{protagonist}}.svg">
+                    {% assign protagonist = event.protagonist | slugify %}
+                    {% assign local-event = event[page.lang] %}
+                    <div class="pure-g">
+                        <div class="timeline-date">
+                            <div class="timeline-icon {{protagonist}}">
+                                <img class="pure-img" src="/assets/images/{{protagonist}}.svg">
+                            </div>
+                            <h1>
+                                {{ event.date | date: "%-d" }}
+                                {% assign m = event.date | date: "%-m" | minus: 1 %}
+                                {{ i18n.months[m] }}
+                                {{ event.date | date: "%Y" }}
+                            </h1>
                         </div>
-                        <h1>{{ event.date | date_to_string }}</h1>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-2">
-                        <img class="mobile-only timeline-img" src="/assets/images/timeline/mobile/{{event.date}}.png">
-                        <img class="desktop-only timeline-img" src="/assets/images/timeline/desktop/{{event.date}}.png">
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-2">
-                        <div class="timeline-description">
-                            <h2>{{ event.title }}</h2>
-                            <p>{{ event.content | markdownify }}</p>
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <img class="mobile-only timeline-img" src="/assets/images/timeline/mobile/{{event.date}}.png">
+                            <img class="desktop-only timeline-img" src="/assets/images/timeline/desktop/{{event.date}}.png">
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <div class="timeline-description">
+                                <h2>{{ local-event.title }}</h2>
+                                {{ local-event.content | markdownify }}
+                            </div>
                         </div>
                     </div>
-                </div>
                 {% endfor %}
-                {% endunless %}
             </section>
         </div>
         {% include footer.html %}

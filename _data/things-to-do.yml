@@ -1,67 +1,77 @@
-- title: Teatro El Circulo
-  content: |
-    A beautiful, historic theater located inside the city where the wedding will be held. You can buy tickets to get a personalized 
-    tour, but be aware that the tour guide only speaks Spanish! There is a hidden gem in the basement--an art gallery of a Rosario native. 
-    Some major Phantom of the Opera vibes.
-    
-    <https://www.teatro-elcirculo.org/>
+- en:
+    title: Teatro El Circulo
+    content: |
+      A beautiful, historic theater located inside the city where the wedding will be held. You can buy tickets to get a personalized 
+      tour, but be aware that the tour guide only speaks Spanish! There is a hidden gem in the basement--an art gallery of a Rosario native. 
+      Some major Phantom of the Opera vibes.
+      
+      <https://www.teatro-elcirculo.org/>
 
-- title: Restaurants!
-  content: |
-    Rosario, and Argentina in general, is full of wonderful restaraunts! In most cases, you can eat a three course meal for less 
-    than $3 USD. Some of our favourites: 
-      - [Davis](https://www.complejodavis.com/)
-      - Gimme Shelter House
-      - [Rock & Feller's](https://www.rockandfellers.com.ar/)
+- en:
+    title: Restaurants!
+    content: |
+      Rosario, and Argentina in general, is full of wonderful restaraunts! In most cases, you can eat a three course meal for less 
+      than $3 USD. Some of our favourites: 
+        - [Davis](https://www.complejodavis.com/)
+        - Gimme Shelter House
+        - [Rock & Feller's](https://www.rockandfellers.com.ar/)
   
-- title: Ice Cream!!
-  content: |
-    Speaking of food, and good food... ice cream!! You can't leave Rosario without trying some. Seriously. We reccommend: Bocha and Touche de Creme.
+- en:
+    title: Ice Cream!!
+    content: |
+      Speaking of food, and good food... ice cream!! You can't leave Rosario without trying some. Seriously. We reccommend: Bocha and Touche de Creme.
   
-- title: Oroño
-  content: Gillian's favourite street in Argentina. Super pretty at night.
+- en:
+    title: Oroño
+    content: Gillian's favourite street in Argentina. Super pretty at night.
   
-- title: El Rivero
-  content: |
-    The river in Rosario is disgusting. It's like the chocolate river in Willy Wonka, except its not chocolate. Lichi promises 
-    there's no poop, but Gillian's not so sure. Despite this, it's beautiful to walk along. There are so many fun restaurants and buildings 
-    to look at!
+- en:
+    title: El Rivero
+    content: |
+      The river in Rosario is disgusting. It's like the chocolate river in Willy Wonka, except its not chocolate. Lichi promises 
+      there's no poop, but Gillian's not so sure. Despite this, it's beautiful to walk along. There are so many fun restaurants and buildings 
+      to look at!
   
-- title: Mercado del Patio
-  content: |
-    Cute little market- great place to get souvenirs/gifts from Argentina. There's a lovely little restaurant called Churrasquito inside.
+- en:
+    title: Mercado del Patio
+    content: Cute little market- great place to get souvenirs/gifts from Argentina. There's a lovely little restaurant called Churrasquito inside.
   
-- title: The Beach!
-  content: |
-    You can take a ferry (La Fluvial) from Rosario to a little island in the middle of the river and spend a day in the sun! Just 
-    be sure to pack sunscreen and a swimsuit you don't care about... remember what I said about the brown water? Yeah. It stained
-    my favourite swimsuit.
+- en:
+    title: The Beach!
+    content: |
+      You can take a ferry (La Fluvial) from Rosario to a little island in the middle of the river and spend a day in the sun! Just 
+      be sure to pack sunscreen and a swimsuit you don't care about... remember what I said about the brown water? Yeah. It stained
+      my favourite swimsuit.
   
-- title: 4 D Theater
-  content: |
-    The movie will probably be in Spanish, but the experience is totally worth it.
+- en:
+    title: 4D Theater
+    content: The movie will probably be in Spanish, but the experience is totally worth it.
   
-- title: Temaiken Zoo
-  content: |
-    Super neat, humongous zoo just outside of Buenos Aires. 
-    
-    <https://www.temaiken.org.ar/>
+- en:
+    title: Temaiken Zoo
+    content: |
+      Super neat, humongous zoo just outside of Buenos Aires. 
+      
+      <https://www.temaiken.org.ar/>
 
-- title: Recoleta Cemetery
-  content: |
-    AMAZING cemetery in Buenos Aires. Think New Orleans. Full of masoleums and cool history. Google maps says its temporarily closed 
-    right now, so check before you plan to go! Hopefully things will open back up closer to the wedding. Fun fact- Lichi almost proposed in
-    a cemetery (it was supposed to have the best view of the sunrise).
+- en:
+    title: Recoleta Cemetery
+    content: |
+      AMAZING cemetery in Buenos Aires. Think New Orleans. Full of masoleums and cool history. Google maps says its temporarily closed 
+      right now, so check before you plan to go! Hopefully things will open back up closer to the wedding. Fun fact- Lichi almost proposed in
+      a cemetery (it was supposed to have the best view of the sunrise).
 
-- title: Wine Tasting
-  content: |
-    The land of Malbec, baby. This one's a plane ride away from Rosario, but definitely worth it. Gillian might even skip her honeymoon 
-    to go with you.
-    
-    <https://www.earthtrekkers.com/mendoza-wine-region-how-to-plan-visit/>
+- en:
+    title: Wine Tasting
+    content: |
+      The land of Malbec, baby. This one's a plane ride away from Rosario, but definitely worth it. Gillian might even skip her honeymoon 
+      to go with you.
+      
+      <https://www.earthtrekkers.com/mendoza-wine-region-how-to-plan-visit/>
 
-- title: Iguazu Falls
-  content: |
-    This is also quite a hike from Rosario... they're on the border between Rosario and Brazil, but its the largest waterfall in 
-    the world (much bigger than Niagara), and looks absolutely stunning in photographs. And hey, if you make it there, might as well
-    check out Brazil, too. :)
+- en:
+    title: Iguazu Falls
+    content: |
+      This is also quite a hike from Rosario... they're on the border between Rosario and Brazil, but its the largest waterfall in 
+      the world (much bigger than Niagara), and looks absolutely stunning in photographs. And hey, if you make it there, might as well
+      check out Brazil, too. :)

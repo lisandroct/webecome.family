@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="footer">
     <h1>G&L</h1>
-    <h2>{{ site.data.events['wedding'].date }}</h2>
+    <h2>{{ site.data.events['wedding'][page.lang].date }}</h2>
     <p>
         &copy;{% assign thisyear = site.time | date: "%Y" %}
         {% if site.first_published %}
