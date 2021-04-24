@@ -8,14 +8,24 @@
       You are more than welcome to come to both celebrations. However, we understand that it's been a tough year financially, and Argentina is a looong flight. Hopefully this will help you know what to expect for both celebrations and make your decision accordingly. :)
       
       In Argentina, there will be a big, traditional wedding in a church, with a night of celebration to follow--dinner, open bar, dancing, etc. Vegas will be a more casual, laid back celebration. We'll be tying the knot (civilly) on the strip, and celebrating after with a big brunch.
+  es:
+    title: ¿Cuál es la diferencia entre Argentina y Las Vegas? ¿A cuál debería ir? 
+    content: |
+      La ceremonia tradicional, en la Iglesia, es en Argentina, seguida de cena, barra libre, baile y fiesta durante toda la noche. Las Vegas va a ser algo más casual, pensado sobretodo para aquellos familiares y amigos de Gillian que no puedan viajar a Argentina.
 
 - en:
     title: Which airport should I fly into in Argentina?
     content: The wedding will be in Rosario, so flying into Aeropuerto Internacional de Rosario Islas Malvinas will be most convenient. However, you can also fly into Buenos Aires (Ezeiza), and there are buses you can take to Rosario. It's about a 4 hour bus ride.
+  es:
+    title: ¿A qué aeropuerto debería viajar?
+    content: Las Vegas, duh... Aunque muy probablemente encuentres conexiones, entrando a Estados Unidos en otro aeropuerto primero. Ahí vas a tener que agarrar tu valija, hacer inmigraciones y volver a despachar la valija. 
 
 - en:
     title: Will I need a visa to fly into Argentina?
     content: No visa is required. All you need is a passport and the address of where you'll be staying.
+  es:
+    title: ¿Necesito visa si viajo a Las Vegas?
+    content: ¡Sí! ¿Qué clase de persona no sabe eso?... En fin, [acá](https://ar.usembassy.gov/visas/nonimmigrant-visas/) vas a encontrar toda la información que necesitás. Querés una visa B1/B2 (para turista). Metele pata que hay pocos turnos.
 
 - en:
     title: What time should I be in Vegas for the civil?
@@ -24,14 +34,16 @@
 - en:
     title: How do you pronounce the groom's name?
     content: The bride still can't. Don't worry about it. Call him Li or Lichi. :D
+  es:
+    title: ¿Cómo pronuncio el nombre de la novia?
+    content: A Lichi no le sale muy bien, así que no te preocupes. Pero no es tanto *Yiyi* o *Yilian* y más *Chi*. :D
 
 - en:
     title: Should I brush up on my Spanish?
     content: It certainly wouldn't hurt, but its not neccessary. Customs officers speak English.
-
-- en:
-    title: Should I brush up on my English?
-    content: It wouldn't hurt, but again, you can probably get by without it.
+  es:
+    title: ¿Debería practicar mi inglés?
+    content: Si sabés pedir una cerveza y preguntar dónde queda el baño, ¿qué más necesitás? Estás yendo a Las Vegas, así que podés repasar las reglas del póker y con eso te debería alcanzar. Aunque si querés practicar inglés, no viene mal.
 
 - en:
     title: Where are you registered?
@@ -40,3 +52,6 @@
 - en:
     title: Other questions?
     content: Text Gillian or Lisandro or email us at <hey@webecome.family>.
+  es:
+    title: ¿Tenés más preguntas?
+    content: ¡Sos insaciable! Bueno, escribinos por privado o mandanos un mail a <hey@webecome.family>.
