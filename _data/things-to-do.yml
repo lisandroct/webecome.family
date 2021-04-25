@@ -69,16 +69,16 @@
   es:
     title: ¡La isla!
     content: |
-      You can take a ferry (La Fluvial) from Rosario to a little island in the middle of the river and spend a day in the sun! Just be sure to pack sunscreen and a swimsuit you don't care about... remember what I said about the brown water?
-      Yeah. It stained my favourite swimsuit.
+      Podés tomar un barco en La Fluvial y pasar el día en la isla, en el medio del río, y bajo el sol. Asegurate de llevar protector solar y una malla que no te importe mucho... te acordás lo que dije del agua marrón?
+      Bueno, me arruinó mi malla favorita.
   
 - en:
     title: 4D Theater
     content: The movie will probably be in Spanish, but the experience is totally worth it.
   es:
     title: 4D Theater
-    content: The movie will probably be in Spanish, but the experience is totally worth it.
-  
+    content: La película probablemente sea en español, pero la experiencia vale la pena.
+    
 - en:
     title: Temaiken Zoo
     content: |
@@ -88,7 +88,7 @@
   es:
     title: Temaikén
     content: |
-      Super neat, humongous zoo just outside of Buenos Aires. 
+      Gigante zoológico en las afueras de Buenos Aires. Muy bueno.
       
       <https://www.temaiken.org.ar/>
 
