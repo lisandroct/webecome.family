@@ -5,8 +5,8 @@ wedding:
     location: | 
       San Ramón Nonato Parish
       Punta Lara 575, Rosario, Argentina
-    date: Friday, January 7, 2022
-    time: 
+    date: Friday, January 8, 2022
+    time: 6:00 PM
     attire: Formal
   es:
     title: Ceremonia
@@ -14,24 +14,28 @@ wedding:
     location: | 
       Parroquia San Ramón Nonato
       Punta Lara 575, Rosario, Argentina
-    date: Viernes, 7 de enero de 2022
-    time: 
+    date: Viernes, 8 de enero de 2022
+    time: '18:00'
     attire: Formal
 
 reception:
   en:
     title: Wedding Reception
     subtitle: Let's party!
-    location: Rosario, Argentina
-    date: Friday, January 7, 2022
-    time: 
+    location: |
+      La Arbolada Eventos
+      Catamarca 1901, Funes, Argentina
+    date: Friday, January 8, 2022
+    time: 8:00 PM
     attire: Formal
   es:
     title: Fiesta
     subtitle: ¡Yo no quiero un shuegro...!
-    location: Rosario, Argentina
-    date: Viernes, 7 de enero de 2022
-    time: 
+    location: |
+      La Arbolada Eventos
+      Catamarca 1901, Funes, Argentina
+    date: Viernes, 8 de enero de 2022
+    time: '20:00'
     attire: Formal
 
 civil:
