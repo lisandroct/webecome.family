@@ -20,7 +20,7 @@
     content: A few months before Gillian was born, Lichi was starting elementary school. Before the era of digital photography, Marta paid for a nice picture of her son smiling in class. This is what she got.
   es:
     title: ¡Se acabó el recreo!
-    content: Unos meses antes de que nazca Gillian, Lichi empezó la escuela primaria. Antes de la era de la fotografía digital, Marta pagó por una bonita foto de su hijo sonriendo en clase. Esto fue lo que consiguió.
+    content: Unos meses antes de que nazca Gillian, Lichi empezó la escuela primaria. Antes de la era de la fotografía digital, Marta pagó por una linda foto de su hijo sonriendo en clase. Esto fue lo que le llegó.
 
 - date: 1998-12-31
   protagonist: her
@@ -28,8 +28,8 @@
     title: It's a girl!
     content: 7lbs , 2 ozs, 21", Gillian was born on new years eve, 1998. Needless to say, her mom has never had a new year's celebration quite like it.
   es:
-    title: ¡Es una niña!
-    content: Con 3,200kg y 53cm, Gillian nació en la víspera de año nuevo de 1998. No hace falta aclarar que su mamá nunca volvió a tener una celebración de año nuevo como esta.
+    title: It's a girl!
+    content: Con 3,200kg y 53cm, Gillian nació en la víspera de año nuevo de 1998. No hace falta aclarar que su mamá nunca volvió a tener un año nuevo como ese.
 
 - date: 2006-10-20
   protagonist: her
@@ -38,7 +38,7 @@
     content: Nolan and Gillian chose the biggest pumpkins in the patch to carve for Halloween. Clearly Gillian has always liked a good workout.
   es:
     title: ¡Es Halloween!
-    content: Nolan y Gillian eligieron las calabazas más grandes del campo para tallar. Claramente, a Gillian siempre le gustó un buen ejercicio.
+    content: Nolan y Gillian eligieron para tallar las calabazas más grandes del campo. Claramente, a Gillian siempre le gustó un buen ejercicio.
 
 - date: 2010-12-05
   protagonist: him
@@ -57,9 +57,9 @@
     content: |
       Después de 17 años de duro trabajo, sudor y lágrimas, terminó la secundaria.
       
-      Está bien... eso es mentira. No es que Lichi no haya aprendido nada, acá podemos verlo, por ejemplo, en una clase muy productiva de contabilidad en la que aprendió a hacer un *inception* de burbujas.
+      Está bien... eso es mentira. Pero no es que Lichi no haya aprendido nada, acá podemos verlo, por ejemplo, en una clase muy productiva de contabilidad en la que aprendió a hacer un *inception* de burbujas.
       
-      Equipo docente, él lo siente mucho.
+      Equipo docente, él se arrepiente.
       
       Bueno, no...
 
@@ -86,8 +86,8 @@
   es:
     title: Escuela secundaria muy cara
     content: |
-      Como dice la imagen... ¡primer día de 13º grado! (en Estados Unidos la primaria y secundaria, en conjunto, son 12 grados). Gillian empezó su licenciatura en 2017 en la Universidad DePauw.
-      Allí, hizo muchos amigos maravillosos, se enteró de que le encantaban los entrenamientos HIIT y aprendió sobre ciencias de la computación... lo cual la llevó a una pasantía en Stanford, donde conoció al Príncipe Azul.
+      Como dice la imagen... ¡primer día de 13º grado! (en Estados Unidos la primaria y la secundaria, en conjunto, son 12 grados). Gillian empezó su licenciatura en DePauw en 2017.
+      Ahí, conoció a muchos amigos, se enteró de que le encantaban los entrenamientos HIIT y aprendió sobre ciencias de la computación... lo cual la llevó a una pasantía en Stanford, donde conoció al Príncipe Azul.
 
 - date: 2018-07-27
   protagonist: them
@@ -111,7 +111,6 @@
       Ese verano les tocó trabajar en el mismo equipo, por lo que pasaron mucho tiempo juntos. En sus noches libres, era fácil encontrarlos jugando a las cartas o caminando por el campus.
       Cuando Lichi finalmente dio el primer paso, Gillian dijo: «Es una mala idea. Las relaciones a larga distancia son difíciles». Lichi respondió: «Vale la pena intentarlo». Y se besaron.
 
-
 - date: 2018-11-08
   protagonist: them
   en:
@@ -122,7 +121,7 @@
   es:
     title: La distancia hace crecer el cariño
     content: |
-      Empezaron a salir la última semana que Gillian estuvo en el camp, luego ella volvió a la universidad y él pegó la vuelta a Argentina.
+      Empezaron a salir la última semana que Gillian estuvo en el camp, luego ella volvió a la universidad y él se pegó la vuelta a Argentina.
       El comienzo de su relación consistió en videollamadas y mensajes de texto, quedándose despiertos hasta las 2 de la mañana hablando porque era todo lo que podían hacer.
 
 - date: 2018-12-28
@@ -135,7 +134,7 @@
   es:
     title: Hola, amor ;)
     content: |
-      ¡Feliz reencuentro #1! Gillian consiguió un pasaporte y se subió a un avión para visitar a Lichi en Argentina. Nunca había estado fuera del país antes, ni hablaba español, así que fue toda una experiencia.
+      ¡Feliz reencuentro #1! Gillian consiguió un pasaporte y se subió a un avión para visitar a Lichi en Argentina. Nunca había estado afuera de Estados Unidos antes, ni hablaba español, así que fue toda una experiencia.
       Vomitó en el aeropuerto porque estaba muy nerviosa y emocionada. Lisandro igual le dio un beso. #keeper
 
 - date: 2019-01-08
@@ -145,7 +144,7 @@
     content: Empanadas, Español, Asado, traveler's diarrhea... their first reunion was quite the experience.Lichi was very sweet, showing Gillian around his city, introducing her to his friends and family, and translating everything for her.
   es:
     title: ¡Aventuras en Argentina!
-    content: Empanadas, español, asado, diarrea del viajero... su primer reencuentro fue toda una experiencia. Lichi fue muy dulce, le mostró a Gillian la ciudad, la presentó a sus amigos y familia y le tradujo todo.
+    content: Empanadas, español, asado, diarrea del viajero... su primer reencuentro fue toda una experiencia. Lichi fue muy dulce, le mostró a Gillian la ciudad, le presentó a sus amigos y familia y le tradujo todo.
 
 - date: 2019-07-27
   protagonist: them
@@ -157,7 +156,7 @@
   es:
     title: Primer casamiento
     content: |
-      Medio año después, se volvieron a encontrar en el camp. Durante el día, tenían que fingir que apenas se conocían. Pero, la clase de 4to grado de Gillian vio el fondo de pantalla de su celular...
+      Medio año después, se volvieron a encontrar en el camp. Durante el día, tenían que aparentar que apenas se conocían. Pero, la clase de 4to grado de Gillian vio el fondo de pantalla de su celular...
       ese día en el recreo le hicieron una corona de flores y se empezaron a reír. Luego la llevaron junto a Lichi para «casarlos». Los *wedding planners* más lindos de todos los tiempos.
 
 - date: 2019-08-01
@@ -167,7 +166,7 @@
     content: Every goodbye was harder than the last. Going from hand holding to video calling was heartbreaking, but they were good at it-- they had a lot of experience.
   es:
     title: Chau
-    content: Cada adiós fue más duro que el anterior. Pasar de tomarse de la mano a hacer videollamadas fue desgarrador, pero ya eran buenos en eso y tenían mucha experiencia.
+    content: Cada adiós fue más duro que el anterior. Pasar de tomarse de la mano a hacer videollamadas era desgarrador, pero ya eran buenos en eso y tenían mucha experiencia.
 
 - date: 2019-11-24
   protagonist: them
@@ -179,7 +178,7 @@
   es:
     title: Pura alegría
     content: |
-      Otro reencuentro largamente esperado. Lichi fue a pasar Acción de Gracias con la familia de Gillian, soportando el frío por ella. A él le encantó elegir un árbol de Navidad de verdad con la familia de Gillian.
+      Otro reencuentro largamente esperado. Lichi fue a pasar Acción de Gracias con la familia de Gillian, enfrentando el frío por ella. A él le encantó elegir un árbol de Navidad de verdad con la familia.
       Luego, volaron juntos a Argentina para Navidad. Ella cantó villancicos en español y se quedó dormida en Navidad (¡se quedan despiertos hasta muy tarde en Argentina!). Fueron unas semanas hermosas.
 
 - date: 2020-01-09
@@ -198,7 +197,7 @@
     content: A year of video calling, sponsored by COVID. So many plans to see each other derailed. So many long nights spent calling. So many I miss you texts. But, despite bad wifi connections, time differences, and many tears, they prevailed!
   es:
     title: ¿Me recordás cómo era eso de besarse?
-    content: Un año entero de videollamadas patrocinado por COVID. Tantos planes de verse frustrados. Tantas largas noches de videollamadas. Tantos «te extraño» por WhatsApp. Pero, a pesar de las malas conexiones de wifi, las diferencias horarias y muchas lágrimas, ¡se la aguantaron juntos!
+    content: Un año de videollamadas patrocinado por COVID. Tantos planes de verse frustrados. Tantas largas noches de videollamadas. Tantos «te extraño» por WhatsApp. Pero, a pesar de las malas conexiones, las diferencias horarias y muchas lágrimas, ¡se la aguantaron juntos!
 
 - date: 2021-01-03
   protagonist: them
@@ -220,4 +219,4 @@
     title: ¡Sí! (finalmente)
     content: |
       Lichi le dijo a Gillian que quería filmar el amanecer en Houston para un video. Se despertaron muy temprano, instalaron un trípode en el parque y se congelaron viendo el amanecer.
-      Lichi le dio a Gillian un álbum de fotos con un «will you marry me?» escondido entre las páginas. Cuando ella lo miró, él estaba en una rodilla. <3
+      Lichi le dio a Gillian un álbum de fotos con un *will you marry me?* escondido entre las páginas. Cuando ella volvió a mirarlo, él estaba en una rodilla. <3
