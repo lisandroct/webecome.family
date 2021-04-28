@@ -189,12 +189,11 @@
             let title = landingSplash.querySelector('h1');
             let info = landingSplash.querySelector('.info');
             let maxHeight = window.innerHeight - title.clientHeight;
-            if(info.clientHeight > maxHeight) {
+            if(window.innerWidth >= 1024 && info.clientHeight > maxHeight) {
                 let scale = maxHeight / info.clientHeight;
                 info.style.transformOrigin = 'left top';
                 info.style.transform = 'scale(' + scale  + ')';
             } else {
-                
                 info.style.transformOrigin = null;
                 info.style.transform = null;
             }
