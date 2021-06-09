@@ -8,5 +8,10 @@
                 <a href="{{ page.url | prepend: site.baseurl }}" class="pure-menu-link">{{ page.menu | default: page.title }}</a>
             </li>
         {% endfor %}
+        {% assign i18n = site.data[page.lang] %}
+        <li class="pure-menu-item"><br></li>
+        <li class="pure-menu-item">
+            <a href="https://zola.com/registry/gillianandlisandro" class="pure-menu-link">{{ i18n.registry }}</a>
+        </li>
     </ul>
 </div>
