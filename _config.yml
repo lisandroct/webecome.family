@@ -7,6 +7,17 @@ description: |
 owner: Gillian and Lisandro
 first_published: 2021
 
+collections:
+  rsvp:
+    output: true
+    permalink: /:name
+
+defaults:
+  - scope:
+      type: "rsvp"
+    values:
+      layout: "rsvp"
+
 permalink: /:title
 
 email: hey@webecome.family

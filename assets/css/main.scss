@@ -3,11 +3,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 $montserrat: "Montserrat", sans-serif;
 $libre-baskerville: "Libre Baskerville", serif;
+$caveat: 'Caveat', cursive;
 
 $primary-color: #e6d9c1;
+$separator: #e6d9c150;
 $dark-background: #111;
 $blue-background: #0a111b;
 $accent-color: #e6b253;
@@ -220,6 +223,71 @@ textarea,
                     font-size: 1.2em;
                     text-align: justify;
                 }
+            }
+        }
+    }
+}
+
+/*
+* -- RSVP --
+*/
+.rsvp-content {
+    position: absolute;
+    background: $dark-background;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    padding-bottom: 220px;
+    #content {
+        width: 80%;
+        margin: 10px auto 0;
+        padding: 30px 0 50px;
+        h2 {
+            font-family: $libre-baskerville;
+            font-size: 1.15em;
+            font-family: $libre-baskerville;
+            margin: 0.6em 0 0.2em;
+        }
+        form {
+            legend {
+                font-family: $montserrat;
+                font-weight: 100;
+                font-size: 2em;
+                color: $accent-color;
+                border-bottom: 1px solid $separator;
+                padding: 0.6em 0 0.1em;
+                margin-bottom: 0.2em;
+            }
+
+            .textfield {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px dashed $primary-color;
+                outline: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border-radius: 0;
+                color: $primary-color;
+                background: transparent;
+                margin: 0;
+                font-family: $caveat;
+                color: $accent-shade;
+                font-size: 1.3em;
+                padding: 0.2em 0;
+
+                &::placeholder {
+                    color: $separator;
+                }
+            }
+
+            button {
+                background-color: $accent-color;
+            }
+
+            hr {
+                border: 0;
+                border-bottom: 1px solid $separator;
+                margin: 5em 0 2em;
             }
         }
     }
