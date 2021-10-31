@@ -69,13 +69,18 @@
                     myObject.guests[i] = { id: id, argentina: argentina, vegas: vegas, restrictions: restrictions };
                 }
                 myObject.email = elements["email"].value;
-                axios.post("https://hooks.zapier.com/hooks/catch/11203246/bhg7p4g", myObject, {headers: {'Accept': 'application/json'}})
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
+                const json = JSON.stringify(myObject);
+                console.log(json);
+                var url = "https://hooks.airtable.com/workflows/v1/genericWebhook/apphPSOY1efULnNYL/wflQZ8K0NKrOA38m8/wtryhIEEnifAYTqOt";
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", url);
+                xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    console.log(xhr.status);
+                    console.log(xhr.responseText);
+                }};
+                var data = json;
+                xhr.send(data);
             }
         </script>
     </body>
