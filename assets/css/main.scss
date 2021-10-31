@@ -10,13 +10,14 @@ $libre-baskerville: "Libre Baskerville", serif;
 $caveat: 'Caveat', cursive;
 
 $primary-color: #e6d9c1;
-$separator: #e6d9c150;
 $dark-background: #111;
 $blue-background: #0a111b;
 $accent-color: #e6b253;
 $accent-shade: #ffcf75;
 $secondary-accent-color: #185099;
 $secondary-accent-shade: #0269ee;
+$form-separator-color: #e6d9c150;
+$form-error-color: #e65353;
 
 $timeline-line-thickness: 4px;
 $him-color: #548de6;
@@ -242,19 +243,40 @@ textarea,
         width: 80%;
         margin: 10px auto 0;
         padding: 30px 0 50px;
+        h1 {
+            color: $accent-color;
+            font-weight: 100;
+            text-align: center;
+            width: 100%;
+            font-size: 3em;
+            span {
+                display: inline-flex;
+                font-weight: 600;
+                font-size: 135%;
+                color: rgb(230, 217, 193);
+                transform: rotate(-5deg);
+            }
+        }
         h2 {
+            text-align: center;
             font-family: $libre-baskerville;
-            font-size: 1.15em;
-            font-family: $libre-baskerville;
-            margin: 0.6em 0 0.2em;
+            font-size: 2em;
+            margin: 0.6em 0 2em;
         }
         form {
+            h3 {
+                font-family: $libre-baskerville;
+                font-size: 1.15em;
+                font-family: $libre-baskerville;
+                margin: 0.6em 0 0.2em;
+            }
+
             legend {
                 font-family: $montserrat;
                 font-weight: 100;
                 font-size: 2em;
                 color: $accent-color;
-                border-bottom: 1px solid $separator;
+                border-bottom: 1px solid $form-separator-color;
                 padding: 0.6em 0 0.1em;
                 margin-bottom: 0.2em;
             }
@@ -276,7 +298,7 @@ textarea,
                 padding: 0.2em 0;
 
                 &::placeholder {
-                    color: $separator;
+                    color: $form-separator-color;
                 }
             }
 
@@ -286,8 +308,15 @@ textarea,
 
             hr {
                 border: 0;
-                border-bottom: 1px solid $separator;
+                border-bottom: 1px solid $form-separator-color;
                 margin: 5em 0 2em;
+            }
+
+            .success {
+                color: $accent-color;
+            }
+            .error {
+                color: $form-error-color;
             }
         }
     }
