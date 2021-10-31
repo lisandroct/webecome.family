@@ -14,3 +14,11 @@ months:
 
 attire: Ropa
 registry: Lista de Casamiento
+form_title: ¿Vas a venir?
+form_yes: No me lo pierdo por nada.
+form_no: Voy a brindar a la distancia.
+dietary_restrictions: Restricción Alimentaria
+none: Ninguna
+submit: Enviar
+form_success: ¡Gracias! En menos de una hora deberías recibir un email de confirmación. Si no te llega, por favor comunicate con nosotros.
+form_error: Algo no anduvo. Volvé a intentar más tarde y si el error continúa, comunicate con nosotros.

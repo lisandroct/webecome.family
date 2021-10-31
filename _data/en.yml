@@ -14,3 +14,11 @@ months:
 
 attire: Attire
 registry: Registry
+formTitle: Will you come?
+form_yes: Wouldn't miss it.
+form_no: I will be toasting from afar.
+dietary_restrictions: Dietary Restrictions
+none: None
+submit: Submit
+form_success: Thank you! You should be getting a confirmation email within an hour. If you don't, please contact us.
+form_error: Something went wrong. Try again later and if the error persists, please contact us.
