@@ -78,8 +78,12 @@
                 myObject.email = elements["email"].value;
                 var json = JSON.stringify(myObject);
                 var request = new XMLHttpRequest();
-                //https://hooks.zapier.com/hooks/catch/11203246/bhqbdtt/
-                request.open("POST", "https://hooks.zapier.com/hooks/catch/11203246/bhg7p4g");
+                {% if page.lang == "es" %}
+                var url = "https://hooks.zapier.com/hooks/catch/11203246/bhqbdtt/";
+                {% else %}
+                var url = "https://hooks.zapier.com/hooks/catch/11203246/bhg7p4g";
+                {% endif %}
+                request.open("POST", url);
                 request.onreadystatechange = function () {
                     if (request.readyState === 4 && request.status == 200) {
                         success.classList.remove("hidden");
