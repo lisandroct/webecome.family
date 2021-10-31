@@ -51,6 +51,12 @@
 - en:
     title: Where are you registered?
     content: <https://zola.com/registry/gillianandlisandro>
+  es:
+    title: ¿Tienen lista de casamiento?
+    content: |
+      Como vamos a viajar a Estados Unidos, tenemos una lista allá:<br><https://zola.com/registry/gillianandlisandro>.
+      
+      Si querés, podés comprar algo y enviarlo a nuestra dirección en Houston (preguntale a Lichi por privado), pero la opción más fácil para todos los invitados de Argentina es hacerle una transferencia a Lichi.
 
 - en:
     title: Other questions?
