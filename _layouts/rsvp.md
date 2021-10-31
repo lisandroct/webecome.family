@@ -69,17 +69,18 @@
                 }
                 myObject.email = elements["email"].value;
                 const json = JSON.stringify(myObject);
-                const sendToAirtable = async () => {
-                    const response = await fetch('https://hooks.airtable.com/workflows/v1/genericWebhook/apphPSOY1efULnNYL/wflQZ8K0NKrOA38m8/wtryhIEEnifAYTqOt', {
-                        method: 'POST',
-                        body: json,
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    });
-                    const result = await response.json();
-                }
-                sendToAirtable();
+                console.log(json);
+                var url = "https://hooks.airtable.com/workflows/v1/genericWebhook/apphPSOY1efULnNYL/wflQZ8K0NKrOA38m8/wtryhIEEnifAYTqOt";
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", url);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    console.log(xhr.status);
+                    console.log(xhr.responseText);
+                }};
+                var data = json;
+                xhr.send(data);
             }
         </script>
     </body>
