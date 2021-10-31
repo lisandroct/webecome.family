@@ -54,6 +54,7 @@
             </div>
         </div>
         {% include scripts.html %}
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script>
             function submit() {
                 const myObject = { guests: [] };
@@ -68,19 +69,13 @@
                     myObject.guests[i] = { id: id, argentina: argentina, vegas: vegas, restrictions: restrictions };
                 }
                 myObject.email = elements["email"].value;
-                const json = JSON.stringify(myObject);
-                console.log(json);
-                var url = "https://hooks.zapier.com/hooks/catch/11203246/bhg7p4g";
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", url);
-                xhr.setRequestHeader("Content-Type", "application/json");
-                xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    console.log(xhr.status);
-                    console.log(xhr.responseText);
-                }};
-                var data = json;
-                xhr.send(data);
+                axios.post("https://hooks.zapier.com/hooks/catch/11203246/bhg7p4g", myObject, {headers: {'Accept': 'application/json'}})
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
         </script>
     </body>
