@@ -70,7 +70,6 @@
                 }
                 myObject.email = elements["email"].value;
                 const json = JSON.stringify(myObject);
-                console.log(json);
                 var url = "https://hooks.zapier.com/hooks/catch/11203246/bhg7p4g";
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", url);
