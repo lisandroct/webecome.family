@@ -10,7 +10,7 @@ first_published: 2021
 collections:
   rsvp:
     output: true
-    permalink: /:name
+    permalink: /:path
 
 defaults:
   - scope:
