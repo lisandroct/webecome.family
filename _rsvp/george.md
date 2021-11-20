@@ -1,6 +1,6 @@
 ---
 guests:
   - id: rechRROddBx82QzaH
-    name: Uncle George
+    name: George Ditzler
 lang: en
 ---
