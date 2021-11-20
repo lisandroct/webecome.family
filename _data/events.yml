@@ -40,16 +40,20 @@ reception:
 
 civil:
   en:
-    title: Vegas Civil Wedding
-    subtitle: Vegas, baby!
-    location: Las Vegas, NV
-    date: Sunday, January 23, 2022
+    title: Indiana Civil Wedding & Reception
+    subtitle: Let's Celebrate!
+    location: |
+      LaFontaine Ballroom
+      208 W State St, Huntington, IN
+    date: Saturday, January 22, 2022
     time: 10:00 AM
-    attire: Vegas chic
+    attire: Semi Formal
   es:
-    title: Civil en Las Vegas
-    subtitle: Vegas, baby!
-    location: Las Vegas, Nevada, Estados Unidos
-    date: Domingo, 23 de enero de 2022
+    title: Civil en Indiana
+    subtitle: Celebramos
+    location: |
+      LaFontaine Ballroom
+      208 W State St, Huntington, IN, Estados Unidos
+    date: Sabado, 22 de enero de 2022
     time: '10:00'
-    attire: ¡Woohoo!
+    attire: Semi Formal
