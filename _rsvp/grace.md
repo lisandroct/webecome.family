@@ -5,6 +5,6 @@ guests:
   - id: recIcMtv8hqktcECZ
     name: Logan Allen
   - id: recX6zko22Vda1PQ6
-    name: Grace's kid
+    name: Ambrose Allen
 lang: en
 ---
