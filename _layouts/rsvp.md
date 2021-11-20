@@ -27,7 +27,7 @@
                                         </label>
                                     </div>
                                     <div class="pure-u-1 pure-u-sm-1-2">
-                                        <h3>Las Vegas</h3>
+                                        <h3>Indiana</h3>
                                         <label for="{{ id }}-vegas-yes" class="pure-radio">
                                             <input type="radio" id="{{ id }}-vegas-yes" name="{{ id }}-vegas" value="yes" required/> {{ i18n.form_yes }}
                                         </label>
