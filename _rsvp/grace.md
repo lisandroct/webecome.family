@@ -1,9 +1,9 @@
 ---
 guests:
   - id: recmJSTRWmYcXQxje
-    name: Grace (invited herself)
+    name: Grace Allen
   - id: recIcMtv8hqktcECZ
-    name: Grace's Husband
+    name: Logan Allen
   - id: recX6zko22Vda1PQ6
     name: Grace's kid
 lang: en
