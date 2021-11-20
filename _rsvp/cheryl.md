@@ -1,6 +1,6 @@
 ---
 guests:
   - id: recC7LACLN3VR0BLu
-    name: Aunt Cheryl
+    name: Cheryl Ditzler
 lang: en
 ---
