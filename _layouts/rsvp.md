@@ -81,7 +81,7 @@
                 {% if page.lang == "es" %}
                 var url = "https://hooks.zapier.com/hooks/catch/11287392/bd5k4f4";
                 {% else %}
-                var url = "https://hooks.zapier.com/hooks/catch/11287392/bd5k9x4";
+                var url = "https://hooks.zapier.com/hooks/catch/11372495/bm2u7mj";
                 {% endif %}
                 request.open("POST", url);
                 request.onreadystatechange = function () {
