@@ -79,7 +79,7 @@
                 var json = JSON.stringify(myObject);
                 var request = new XMLHttpRequest();
                 {% if page.lang == "es" %}
-                var url = "https://hooks.zapier.com/hooks/catch/11287392/bd5k4f4";
+                var url = "https://hooks.zapier.com/hooks/catch/11372495/bm2tpnj";
                 {% else %}
                 var url = "https://hooks.zapier.com/hooks/catch/11372495/bm2u7mj";
                 {% endif %}
