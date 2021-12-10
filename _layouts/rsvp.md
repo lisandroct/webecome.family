@@ -79,9 +79,9 @@
                 var json = JSON.stringify(myObject);
                 var request = new XMLHttpRequest();
                 {% if page.lang == "es" %}
-                var url = "https://hooks.zapier.com/hooks/catch/11372495/bm2tpnj";
+                var url = "https://hooks.zapier.com/hooks/catch/11453159/bmct5hc";
                 {% else %}
-                var url = "https://hooks.zapier.com/hooks/catch/11372495/bm2u7mj";
+                var url = "https://hooks.zapier.com/hooks/catch/11453159/bmctozs";
                 {% endif %}
                 request.open("POST", url);
                 request.onreadystatechange = function () {
